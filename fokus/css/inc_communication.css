@@ -1,0 +1,771 @@
+
+.newsletter_neu {
+    overflow: auto;
+}
+
+.newsletter_neu a {
+    display: block;
+    float: right;
+    background: url(../images/add.png) no-repeat left center;
+    padding: 11px 0px 11px 30px;
+}
+
+.newsletterov h2 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #777;
+}
+
+.newsletterov div.spalte {
+    margin-bottom: 6px;
+    background: #fff;
+    overflow: auto;
+    width: 795px;
+}
+
+#Kstruk_doks button.bl {
+    margin-top: 7px;
+}
+
+.newsletterov div p {
+    float: left;
+    padding: 4px 7px;
+}
+
+.newsletterov div p.mail {
+    width: 45px;
+}
+.newsletterov div p.titel {
+    width: 185px;
+    font-size: 12px;
+    padding-top: 9px;
+}
+.newsletterov div p.last {
+    width: 240px;
+    padding-top: 9px;
+}
+.newsletterov div p.edit {
+    width: 80px;
+    padding-top: 9px;
+}
+.newsletterov div p.send {
+    width: 130px;
+    padding-top: 9px;
+}
+.newsletterov div p.del {
+    float: right;
+}
+
+
+.nele .struk_dok_table {
+    width: 100%;
+    line-height: 1.4;
+    font-size: 12px;
+}
+
+.nele .struk_dok_table td {
+    padding: 7px 10px 9px 0px;
+    vertical-align: top;
+}
+
+.nele .struk_dok_table td.left {
+    padding: 8px 20px 3px 0px;
+    width: 180px;
+}
+
+.nele .struk_dok_table span {
+    font-size: 10px;
+    color: #aaa;
+    display: block;
+    margin-top: 2px;
+}
+
+.nele .struk_dok_table input.titel {
+    margin-top: 3px;
+    width: 300px;
+}
+
+.nele .struk_dok_table select {
+    margin-top: 3px;
+}
+
+.nele .nlpreview {
+    overflow: auto;
+}
+
+.nele .nlpreview a {
+    overflow: auto;
+    display: block;
+    background: url(../images/vorschau.png) no-repeat left center;
+    width: 150px;
+    padding: 12px 0px 12px 55px;
+    font-size: 12px;
+}
+
+
+.nele textarea.newsletter_empf {
+    width: 99%;
+    height: 70px;
+}
+
+.nele .box {
+    overflow: auto;
+}
+
+.nele a.add_empf {
+    display: block;
+    float: right;
+    background: url(../images/add.png) no-repeat left center;
+    padding: 7px 0px 7px 25px;
+    text-align: right;
+}
+
+.nele td.bigleft {
+    width: 280px !important;
+}
+
+.nele .cmail {
+    width: 240px;
+    margin-bottom: 8px;
+}
+
+.nele .gocopy p {
+    margin-bottom: 6px;
+    font-size: 11px;
+    overflow: auto;
+}
+
+.nele .gocopy p input {
+    float: left;
+    margin-right: 12px;
+}
+
+.nele .gocopy p label {
+    float: left;
+    padding-top: 2px;
+}
+
+.nele .deakt td {
+    color: #aaa;
+}
+
+.nele .absender, .nele .betreff {
+    width: 250px;
+}
+
+.sendnl {
+    position: relative;
+    font-size: 11px;
+}
+
+.sendnl .oder {
+    display: block;
+    position: absolute;
+    color: #444;
+    font-size: 13px;
+    font-weight: bold;
+    background: url("../images/newsletter.png") no-repeat;
+    width: 102px;
+    height: 42px;
+    padding-top: 24px;
+    text-align: center;
+    left: 338px;
+    top: 32px;
+}
+
+.sendnl .a {
+    float: left;
+    width: 300px;
+    padding: 0px 14px;
+    background: #fff;
+    overflow: auto;
+}
+
+.sendnl .b {
+    float: right;
+    width: 300px;
+    padding: 0px 14px;
+    background: #fff;
+    text-align: right;
+    overflow: auto;
+}
+
+.sendnl p {
+    padding: 12px 0px;
+}
+
+.sendnl p.ce {
+    padding: 0px 0px;
+    height: 20px;
+}
+
+.sendnl p.ce2 {
+    padding: 5px 0px 0px;
+    height: 15px;
+}
+
+.sendnl p input {
+    width: 200px;
+    margin-left: 12px;
+}
+
+#send_status {
+    font-size: 12px;
+    display: none;
+}
+
+#send_status .info {
+    margin-top: 12px;
+}
+
+#send_status .info span {
+    font-weight: bold;
+}
+
+#send_status h2 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #777;
+}
+
+.benutzerauswahl {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.benutzerauswahl .auswahl .box {
+    overflow: auto;
+}
+
+.benutzerauswahl .auswahl .a {
+    float: left;
+    width: 380px;
+    overflow: auto;
+}
+
+.benutzerauswahl .auswahl .a p {
+    float: left;
+    overflow: auto;
+    background: #fff;
+    padding: 3px 4px;
+    margin: 3px 10px 3px 0px;
+}
+
+.benutzerauswahl .auswahl .a p input {
+    float: left;
+    margin-right: 6px;
+}
+
+.benutzerauswahl .auswahl .a p label {
+    float: left;
+}
+
+.benutzerauswahl .auswahl .b {
+    float: right;
+}
+
+.benutzerauswahl .auswahl .b input {
+    width: 200px;
+    margin-top: 3px;
+}
+
+.benutzerauswahl .auswahl .fstati {
+    float: right;
+}
+
+.benutzerauswahl .ergebnis table {
+    width: 100%;
+}
+
+.benutzerauswahl .ergebnis table td {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 3px 5px;
+    font-size: 11px;
+    vertical-align: middle;
+}
+
+.benutzerauswahl .ergebnis table tr.head td {
+    font-size: 12px;
+    color: #777;
+    font-weight: bold;
+}
+
+
+#kkanaele .kanal {
+    padding: 10px 15px 10px 60px;
+    margin: 5px 0px 15px;
+    background: #fff url(../images/kk.png) no-repeat 8px 9px;
+}
+
+#kkanaele .kanal h2 {
+    font-size: 21px;
+    font-weight: normal;
+    color: #444;
+}
+
+#kkanaele .kanal h2 span {
+    color: #c3c3c3;
+}
+
+#kkanaele .kanal p {
+    font-size: 12px;
+    margin: 10px 0px;
+}
+
+#kkanaele .kanal table {
+    margin-bottom: 10px;
+    width: 100%;
+    display: none;
+}
+
+#kkanaele .kanal table td {
+    border: 1px solid #cdcdcd;
+}
+
+#kkanaele .kanal table td.a {
+    border-right: 0px;
+    width: 90%;
+}
+
+#kkanaele .kanal table td.b {
+    border-left: 0px;
+}
+
+#kkanaele .kanal table a {
+    display: block;
+    padding: 10px;
+}
+
+#kkanaele .kanal table td.a a {
+    font-weight: bold;
+    color: #656565;
+}
+
+#kkanaele .kanal table tr:hover td {
+    background: #e5eff9;
+}
+
+#kkanaele .kanal table tr:hover a {
+    color: #074d93;
+}
+
+#kkanaele .kanal table tr.is_empty td {
+    display: none;
+}
+
+#kkanaele .kanal a.rbutton {
+    font-size: 12px;
+}
+
+#kkanaele .kanal span.hinweis {
+    display: inline-block;
+    font-size: 12px;
+    padding: 4px;
+    border: 1px dotted #aaa;
+    color: #888;
+}
+
+
+#form_fields #form_head {
+    overflow: auto;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#form_fields #form_head .li {
+    float: left;
+    margin-right: 20px;
+    width: 230px;
+    font-size: 11px;
+    border: 1px solid #eee;
+}
+
+#form_fields a.more_opt {
+    display: block;
+    padding: 5px 4px 5px 16px;
+    background: #fff url(../images/rpfeil_unten.png) no-repeat 2px center;
+    font-size: 12px;
+}
+
+#form_fields .opt {
+    padding: 15px 5px 10px 15px;
+    display: none;
+    background: #fff;
+}
+
+#form_fields .opt button {
+    margin-top: 5px;
+}
+
+#form_fields .opt table {
+    margin: 0px 0px 0px;
+}
+
+#form_fields .opt table td {
+    padding: 1px 9px 1px 0px;
+    vertical-align: middle;
+}
+
+#form_fields .multiopt {
+    font-size: 12px;
+}
+
+#form_fields .multiopt strong {
+    display: block;
+    color: #444;
+    padding-bottom: 6px;
+}
+
+#form_fields .multiopt a {
+    display: inline-block;
+    padding: 1px 2px 1px 0px;
+}
+
+#form_fields #form_head .re {
+    float: right;
+    text-align: right;
+}
+
+#form_fields #form_head .re input {
+    width: 208px;
+    padding: 2px 8px;
+    margin-left: 7px;
+}
+
+#form_fields table#form_auflistung {
+    width: 100%;
+}
+
+#form_fields table#form_auflistung td {
+    border:1px dotted #ccc;
+    padding: 6px 8px;
+    background: #fff;
+}
+
+#form_fields table#form_auflistung tr#headline td {
+    font-weight: bold;
+    color: #555;
+    border: 0px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 14px 8px 7px;
+    text-align: center;
+}
+
+#form_fields table#form_auflistung tr.last td {
+    border-bottom: 1px solid #ccc;
+}
+
+#form_fields table#form_auflistung td.last, #form_fields table#form_auflistung tr#headline td.last {
+    border-right: 1px solid #ccc;
+}
+
+#form_fields table#form_auflistung td.first, #form_fields table#form_auflistung tr#headline td.first {
+    border-left: 1px solid #ccc;
+}
+
+#form_fields table#form_auflistung td.optional, #form_fields table#form_auflistung tr#headline td.optional {
+    color: #9a9a9a;
+    text-align: center;
+}
+
+#form_fields p.export {
+    padding-top: 8px;
+    text-align: right;
+}
+
+#form_fields p.export a {
+    margin-left: 15px;
+}
+
+
+#pn {
+    width: 838px;
+    overflow: auto;
+}
+
+#pn #pnL {
+    width: 198px;
+    float: left;
+}
+
+#pn #pnL #neue_pn {
+    margin-bottom: 28px;
+}
+
+#pn #pnL #neue_pn a {
+    display: block;
+    margin-bottom: 7px;
+    margin-right: 7px;
+    overflow: auto;
+    background: #fff;
+    padding: 10px 8px;
+}
+
+#pn #pnL #neue_pn a.unread {
+    border: 1px solid #ccc;
+}
+
+#pn #pnL #neue_pn a.aktiv {
+    margin-right: 0px;
+    padding-right: 15px;
+    border-right: 0px;
+    color: #555;
+}
+
+#pn #pnL #neue_pn a span {
+    float: left;
+}
+
+#pn #pnL #neue_pn a strong {
+    float: right;
+}
+
+#pn #pnL #neue_pn a strong span {
+    float: none;
+    font-weight: normal;
+}
+
+#pn #pnL h3 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#pn #pnL #suche_empf {
+    margin: 5px 0px 6px;
+    width: 184px;
+}
+
+#pn #pnL #last_empf {
+    background: #fff;
+    padding: 4px 5px 1px;
+    margin: 5px 10px 0px 0px;
+}
+
+#pn #pnL #last_empf p {
+    overflow: auto;
+    margin: 7px 0px;
+}
+
+#pn #pnL #last_empf p input {
+    float: left;
+    margin-right: 10px;
+}
+
+#pn #pnL #last_empf p label {
+    float: left;
+    display: block;
+    padding-top: 4px;
+}
+
+#pn #pnL #last_empf p.bp {
+    margin-bottom: 2px;
+    text-align: right;
+}
+
+#pn #pnL #last_empf p.bp button {
+    display: none;
+}
+
+#pn #pnR {
+    width: 610px;
+    padding: 0px 15px;
+    float: left;
+    background: #fff;
+}
+
+#pn #pnR #new_msg {
+    padding: 8px 0px 9px;
+    border-bottom: 1px dotted #ccc;
+    overflow: auto;
+    display: block;
+}
+
+#pn #pnR #new_msg img {
+    float: right;
+}
+
+#pn #pnR #new_msg span {
+    float: right;
+    display: block;
+    padding: 5px 0px 0px 8px;
+}
+
+#pn #pnR h2 {
+    margin: 16px 0px 20px;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+#pn #pnR .pnO {
+    width: 610px;
+    margin: 5px 0px 19px;
+    overflow: auto;
+    padding: 2px 0px;
+}
+
+#pn #pnR .pnO .pnA {
+    float: left;
+    width: 60px;
+}
+
+#pn #pnR .pnO .pnB {
+    float: left;
+    width: 130px;
+    padding-right: 20px;
+}
+
+#pn #pnR .pnO .pnB span {
+    display: block;
+    color: #333;
+    margin: 4px 0px;
+}
+
+#pn #pnR .pnO .pnC {
+    float: left;
+    width: 400px;
+}
+
+#pn #pnR .pnO .pnC a.titel {
+    font-size: 14px;
+    display: block;
+}
+
+#pn #pnR .pnO .pnC a.unread {
+    font-weight: bold;
+}
+
+#pn #pnR .pnO .pnC .vorschau, #pn #pnR .pnO .pnC .text {
+    margin: 5px 0px 4px;
+    color: #777;
+    line-height: 1.25;
+}
+
+#pn #pn_mehr {
+    overflow: auto;
+    clear: both;
+}
+
+#pn #pn_mehr a {
+    display: block;
+    float: right;
+    margin-top: 8px;
+    background: #fff;
+    width: 240px;
+    text-align: center;
+    padding: 8px 0px;
+    font-weight: bold;
+}
+
+
+#neu_pn strong {
+    display: block;
+    margin: 5px 0px 8px;
+    color: #444;
+}
+
+#neu_pn #msg_titel {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#neu_pn #cke_msg_text {
+    margin-bottom: 30px;
+}
+
+#neu_pn .msg_empf {
+    overflow: auto;
+    margin-bottom: 12px;
+}
+
+#neu_pn .msg_empf .tempf {
+    display: block;
+    float: left;
+    overflow: auto;
+    width: 190px;
+    margin-right: 10px;
+}
+
+#neu_pn .msg_empf a.del {
+    display: block;
+    float: left;
+    width: 20px;
+    background: #ff0000;
+}
+
+#neu_pn .msg_empf a.inc_users {
+    display: block;
+    float: left;
+}
+
+
+.livetalk {
+    overflow: auto;
+    font-size: 12px;
+}
+
+.livetalk .sperre {
+    height: 8px;
+}
+
+.livetalk .LL {
+    float: left;
+    width: 190px;
+    padding: 1px 5px;
+}
+
+.livetalk .LL img.ladebalken {
+    margin-top: 10px;
+}
+
+.livetalk .LR {
+    float: left;
+    width: 528px;
+    padding: 4px 5px 5px;
+    background: #fff;
+}
+
+#livetalk .LL a {
+    display: block;
+}
+
+#livetalk .LL div {
+    color: #333;
+}
+
+#livetalk .LL span {
+    display: block;
+    color: #999;
+}
+
+#livetalk .alt {
+    text-align: right;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#livetalk .talk {
+    overflow: hidden;
+    margin-bottom: 1px;
+}
+
+#livetalk .talk .LR {
+    line-height: 1.35;
+}
+
+#new_livetalk .LR {
+    text-align: right;
+}
+
+#new_livetalk textarea {
+    width: 534px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+
+#pinnwand {
+    font-size: 12px;
+}
+

@@ -1,0 +1,36 @@
+#app-three-colors p {
+    padding: 10px 0px;
+    border-bottom: 1px dotted #ccc;
+}
+
+#app-three-colors .clr {
+    clear: both;
+    display: block;
+}
+
+#app-three-colors p:last-child {
+     border-bottom: 0px dotted #ccc;
+ }
+
+#app-three-colors p > label {
+    float: left;
+    width: 120px;
+    padding-right: 10px;
+}
+
+#app-three-colors p > span {
+    float: left;
+    max-width: 350px;
+}
+
+#app-three-colors p > span input[type=text] {
+    min-width: 250px;
+}
+
+#app-three-colors img.logo {
+    display: block;
+}
+
+#app-three-colors img.logo.hidden {
+     display: none;
+ }

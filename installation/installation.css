@@ -1,0 +1,67 @@
+.fenster {
+    width: 700px;
+    top: 0px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+h1 {
+    cursor: move;
+}
+
+fieldset {
+    padding: 8px 12px;
+}
+
+.warnung {
+    border: 1px solid #682727;
+    background: #fce9e9;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+.warnung strong {
+    display: block;
+    font-size: 13px;
+}
+
+.ok {
+    border: 1px solid #81c17c;
+    background: #e9fae8;
+    padding: 8px 10px;
+    margin: 10px 0px;
+}
+
+.ok strong {
+    display: block;
+    font-size: 13px;
+}
+
+fieldset {
+    background: #fff;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.daten {
+    width: 100%;
+}
+
+.daten td.first {
+    font-size: 13px;
+}
+
+.daten td {
+    padding: 4px 6px;
+}
+
+.daten input, .daten select {
+    width: 350px;
+}
+
+#step2, #step3, #step4, #step5 {
+    display: none;
+}

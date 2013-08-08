@@ -1,0 +1,9 @@
+<files *>
+    Order deny,allow
+    Deny from all
+</files>
+
+<filesMatch "^(static.php|img.php|ajax.php|download.php|feed.php|robots.txt|sitemap.php|test.php)$">
+    Order deny,allow
+    Allow from all
+</filesMatch>

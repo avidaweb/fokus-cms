@@ -1,0 +1,869 @@
+#strukturverwaltung {
+    font-size: 12px;
+}
+
+#strukturverwaltung table {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+#strukturverwaltung table th {
+    padding: 8px 8px;
+    font-weight: bold;
+    border: 1px solid #cdcdcd;
+    color: #777;
+    text-transform: uppercase;
+    background: #fff;
+    text-align: center;
+}
+
+#strukturverwaltung table td {
+    padding: 2px 8px;
+    border: 1px solid #cdcdcd;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#strukturverwaltung table .a {
+    text-align: left;
+}
+
+#strukturverwaltung table .d {
+    font-size: 11px;
+}
+
+#vslots p.inactive {
+    color: #999;
+}
+
+#vslots p.inactive label {
+    cursor: text;
+}
+
+#vslots p.inactive span {
+    color: #bbb;
+}
+
+
+#struktur_neu {
+    font-size: 12px;
+}
+
+#struktur_neu table {
+    width: 100%;
+}
+
+#struktur_neu table td {
+    padding: 6px 0px;
+}
+
+#struktur_neu table td.b {
+    padding-left: 30px;
+}
+
+#struktur_neu select, #struktur_neu input {
+    width: 210px;
+}
+
+
+#mfa_bearbeiten .area {
+    padding: 10px 0px 0px 20px;
+    font-size: 12px;
+}
+
+#mfa_bearbeiten .area>p {
+    overflow: auto;
+}
+
+#mfa_bearbeiten .area>p label {
+    float: left;
+    display: inline-block;
+    padding: 4px 0px 0px 8px;
+    font-size: 13px;
+}
+
+#mfa_bearbeiten .area>p input {
+    float: left;
+}
+
+#mfa_bearbeiten .area .more {
+    display: inline-block;
+    padding: 4px;
+    background: #fff;
+    margin: 3px 0px 6px 24px;
+    border: 1px solid #ddd;
+}
+
+#mfa_bearbeiten .area .more.auswahl span {
+    padding-right: 14px;
+}
+
+#mfa_bearbeiten .area select[name=templatedatei], #mfa_bearbeiten .area select[name=m_templatedatei] {
+    min-width: 200px;
+}
+
+#mfa_bearbeiten .area table.zeitraum {
+    width: auto;
+}
+
+#mfa_bearbeiten .area table.zeitraum td {
+    padding: 4px 3px;
+    vertical-align: middle;
+    line-height: 1;
+}
+
+#mfa_bearbeiten .area table.zeitraum td img {
+}
+
+#mfa_bearbeiten .area table.zeitraum td.time select {
+    width: 40px;
+}
+
+#mfa_bearbeiten .area table.zeitraum td.notaktiv {
+    color:#bbb;
+}
+
+#mfa_bearbeiten .area table.zeitraum input.datepicker {
+    width: 80px;
+    margin-right: 4px;
+}
+
+
+#strukturelement {
+    font-size: 12px;
+}
+
+.language_dialog .sprache {
+    padding: 2px 3px;
+    margin-top: 5px;
+}
+
+.language_dialog table.element_sprachen {
+    line-height: 1.35;
+}
+
+.language_dialog table.element_sprachen td {
+    padding: 6px 0px;
+    vertical-align: top;
+}
+
+.language_dialog table.element_sprachen tr.main td, .language_dialog table.element_sprachen tr.bezeichner td {
+    vertical-align: middle;
+}
+
+.language_dialog table.element_sprachen tr.bezeichner td {
+    padding-bottom: 10px;
+}
+
+.language_dialog table.element_sprachen tr.main td {
+    padding: 0px;
+}
+
+.language_dialog table.element_sprachen tr.firstrow td {
+    padding-top: 10px;
+}
+
+.language_dialog table.element_sprachen td.breit {
+    width: 156px;
+    padding-left: 4px;
+}
+
+.language_dialog table.element_sprachen td.inp {
+    width: 312px;
+}
+
+.language_dialog table.element_sprachen td.inp input, .language_dialog table.element_sprachen td.inp select, .language_dialog table.element_sprachen td.inp textarea {
+    width: 300px;
+}
+
+.language_dialog table.element_sprachen td.inp textarea {
+    height: 60px;
+}
+
+.language_dialog table.element_sprachen td.auswahl {
+    width: 30px;
+}
+
+.language_dialog table.element_sprachen td.flagge {
+    width: 38px;
+}
+
+.language_dialog table.element_sprachen td.titel {
+    width: 92px;
+}
+
+.language_dialog table.element_sprachen td.more {
+    text-align: right;
+    width: 64px;
+}
+
+.language_dialog table.element_sprachen tr.bezeichner td.more {
+    text-align: left;
+    color: #888;
+    font-size: 11px;
+}
+
+.language_dialog table.element_sprachen .gsnippet {
+    padding: 15px 10px 6px;
+    line-height: 1.24;
+    font-family: Arial, sans-serif;
+}
+
+.language_dialog table.element_sprachen .gsnippet p {
+    margin-bottom: 2px;
+}
+
+.language_dialog table.element_sprachen .gsnippet p.s_titel {
+    color: #12C;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: medium;
+}
+
+.language_dialog table.element_sprachen .gsnippet p.s_url {
+    font-style: normal;
+    color: #093;
+    font-size: small;
+}
+
+.language_dialog table.element_sprachen .gsnippet p.s_desc {
+    line-height: 1.24;
+    font-size: small;
+    color: #666;
+}
+
+.language_dialog table.element_sprachen .gsnippet p.s_desc span  {
+    color: #222;
+}
+
+#strukturelement .buttons {
+    clear: both;
+    padding-top: 7px;
+}
+
+article.document-preview {
+    background: #4d4d4d;
+    margin-bottom: 13px;
+    box-shadow: 0px 0px 5px #333;
+    width: 542px;
+    clear: both;
+    overflow: auto;
+}
+
+article.document-preview .c {
+    width: 520px;
+    float: left;
+}
+
+article.document-preview .c .head {
+    overflow: hidden;
+    text-align: center;
+    background: #fff;   
+    width: 520px; 
+    text-align: center;
+}
+
+article.document-preview .c .head .bezeichner {
+    display: block;
+    font-size: 13px;
+    padding-top: 9px;
+    height: 21px;
+    text-align: center;
+}
+
+article.document-preview .c .head .status {
+    float: left;
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+article.document-preview .c .head .status span.mystatus {
+    float: none;
+    margin: 7px 0px 0px 7px;
+    height: 15px;
+    cursor: help;
+}
+
+article.document-preview .c .head .titel {
+    float: left;
+    display: block;
+    width: 460px;
+    padding-top: 9px;
+    font-size: 13px;
+}
+
+article.document-preview .c .head .duebersicht {
+    float: none;
+    width: auto;
+    height: 21px;
+    text-align: center;
+}
+
+article.document-preview .c .head .del {
+    float: right;
+    display: block;
+    width: 30px;
+    padding-top: 7px;
+    font-size: 15px;
+    color: #222;
+}
+
+article.document-preview .c .head .del:hover {
+    color: #0b96ea;
+}
+
+article.document-preview .c .spalten {
+    overflow: auto;
+}
+
+article.document-preview .c .spalten .spalte {
+    background: #eee;
+    overflow: auto;
+    box-shadow:inset 0px 4px 4px #a3a1a1;
+}
+
+article.document-preview .c .spalten .spalte .inh {
+    padding: 10px 12px 5px;
+    overflow: auto;
+}
+
+article.document-preview .c .spalten .spalte .inh.morespa {
+    padding: 12px 0px;
+    text-align: center;
+    font-size: 18px;
+    color: #aaa;
+}
+
+article.document-preview .c .type_10 { font-size: 13px; color: #333; padding-bottom: 7px; font-weight: bold; }
+article.document-preview .c .type_11 { font-size: 12px; color: #555; padding-bottom: 6px; font-weight: bold; }
+article.document-preview .c .type_12 { font-size: 12px; color: #555; padding-bottom: 5px; }
+article.document-preview .c .type_13 { font-size: 11px; color: #666; padding-bottom: 5px; }
+article.document-preview .c .type_15 { font-size: 11px; color: #777; padding-bottom: 5px; }
+article.document-preview .c .type_18 { font-size: 11px; color: #777; padding-bottom: 5px; font-style: italic; }
+article.document-preview .c .type_30 { clear: both; float: left; margin: 0px 8px 5px 0px; border: 1px solid #bbb; height: 50px; overflow: hidden; }
+article.document-preview .c .type_30 img { height: 50px; }
+article.document-preview .c .type_40 { clear: both; overflow: auto; margin-bottom: 5px; height: 42px; overflow: hidden; }
+article.document-preview .c .type_40 img { float: left; margin-right: 4px; border: 1px solid #ccc; height: 40px; }
+
+article.document-preview .drag {
+    width: 22px;
+    float: right;
+    background: url(../images/schaffiert.jpg);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: move;
+}
+
+
+#strukturelement_optionen {
+    font-size: 12px;   
+    line-height: 1.4; 
+}
+
+#strukturelement_optionen > table {
+    width: 100%;
+}
+
+#strukturelement_optionen tr.more>td {
+    padding: 8px 0px;
+    border-bottom: 1px dotted #ccc;
+}
+
+#strukturelement_optionen tr:last-child td {
+    border-bottom: 0px;
+}
+
+#strukturelement_optionen td.left {
+    width: 200px;
+	padding-right: 12px;
+}
+
+#strukturelement_optionen td.tdrollen {
+    border-top: 1px dotted #ccc;
+}
+
+#strukturelement_optionen .rollen {
+    display: none;
+    padding-left: 30px;
+    margin-top: 8px;
+}
+
+#strukturelement_optionen .rollen p {
+    margin-top: 8px;
+}
+
+#strukturelement_optionen td.tdnavi {
+    border-top: 1px dotted #ccc;
+}
+
+#strukturelement_optionen .navi {
+    display: none;
+    padding-left: 30px;
+    margin-top: 8px;
+}
+
+#strukturelement_optionen tr.cf select, #strukturelement_optionen tr.cf textarea, #strukturelement_optionen tr.cf input[type=text] {
+	width: 95%;
+}
+
+#strukturelement_optionen .zeitraumtd {
+    font-size: 11px;
+}
+
+#strukturelement_optionen table.zeitraum {
+    width: auto;
+    margin: 3px 0px 0px;
+}
+
+#strukturelement_optionen table.zeitraum td {
+    padding: 0px 3px 10px;
+    vertical-align: middle;
+}
+
+#strukturelement_optionen table.zeitraum td.notaktiv {
+    color:#bbb;
+}
+
+#strukturelement_optionen table.zeitraum input.datepicker {
+    width: 80px;
+    margin-right: 4px;
+}
+
+#strukturelement_optionen table.freigabe td {
+    padding: 3px 5px 3px 0px;
+    vertical-align: middle;
+}
+
+#strukturelement_optionen table.freigabe td.last {
+    color: #999;
+    padding-left: 10px;
+    font-size: 11px;
+}
+
+
+#strukturelement_dk table {
+    width: 100%;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+#strukturelement_dk tr.dkmore td.dkmore_cbtd {
+    width: 22px;
+}
+
+#strukturelement_dk tr.dkfirst td {
+    border-top: 1px dotted #bbb;
+    font-size: 18px;
+    padding: 12px 0px;
+}
+
+#strukturelement_dk td {
+    padding: 4px 10px 4px 0px;
+}
+
+#strukturelement_dk td.dklasse-optT {
+    padding-bottom: 0px;
+}
+
+#strukturelement_dk table table {
+    font-size: 11px;
+    margin-top: 10px;
+    margin-left: 8px;
+    width: auto;
+    display: none;
+}
+
+#strukturelement_dk table table table {
+    margin-top: 5px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    display: table;
+}
+
+#strukturelement_dk table table table td {
+    border-top: 1px dotted #ccc;
+    border-bottom: 1px dotted #ccc;
+    padding: 7px 0px;
+}
+
+#strukturelement_dk table table table td.lfi {
+    width: 150px;
+}
+
+#strukturelement_dk table table table table {
+    margin: 0px;
+}
+
+#strukturelement_dk table table table table td {
+    border: 0px;
+    padding: 2px 4px;
+}
+
+#strukturelement_dk table table table td.filterOI table td {
+    color: #bbb;
+}
+
+#strukturelement_dk table table table table td input.vonbis {
+    width: 50px;
+}
+
+
+.baum {
+    overflow: visible;
+}
+
+.baum .tbuttons {
+    margin: 15px 0px 0px 20px;
+}
+
+.baum .zweig {
+    padding: 0px 0px 0px 20px;
+}
+
+.baum .row {
+    overflow: visible;
+    height: 22px;
+    padding-top: 1px;
+}
+
+.baum .zweig_0 > .row {
+    padding-top: 4px;
+}
+
+.baum .white {
+    float: left;
+    background: #fff;
+    width: 230px;
+    height: 22px;
+    overflow: hidden;
+}
+
+.baum .white.childs {
+    background: #fff url(../images/childs.png) no-repeat right bottom;
+}
+
+.baum .white.p_is_hidden {
+    opacity: 0.8;
+}
+
+.baum .is_open>.white.childs {
+    background-image: none;
+}
+
+.baum .white.chooseme {
+    cursor: pointer;
+}
+
+.baum .white.chooseme:hover {
+    background-color: #eee;
+}
+
+.baum .white .name {
+    display: block;
+    padding: 6px 6px 0px;
+    height: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.baum .white .just_select {
+    display: block;
+    padding: 2px 3px 0px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.baum .white .just_select input {
+    float: left;
+}
+
+.baum .white .just_select label {
+    float: left;
+    padding: 5px 0px 0px 3px;
+}
+
+.baum .more {
+    float: right;
+    width: auto;
+    height: 22px;
+    overflow: visible;
+    background: #333;
+    color: #fff;
+}
+
+.baum .more a {
+    color: #fff;
+}
+
+.baum .more a:hover {
+    color:#65d5fd;
+}
+
+.baum .more .klappen {
+    float: left;
+    width: 106px;
+    display: block;
+    padding: 6px 2px 3px 22px;
+    background: url(../images/baum_pfeile.png) no-repeat 9px 1px;
+}
+
+.baum .more .klappen strong {
+    font-weight: normal;
+}
+
+.baum .more .klappen span {
+    color: #aaa;
+}
+
+.baum .more .opt {
+    float: left;
+    width: auto;
+    position: relative;
+}
+
+.baum .more .opt.optwmargin {
+    margin-left: 130px;
+}
+
+.baum .more .opt>a {
+    display: block;
+    padding: 6px 8px 5px 22px;
+    background: url(../images/baum_pfeile.png) no-repeat 9px 1px;
+}
+
+.baum .more .klappen:hover, .baum .more .opt>a:hover {
+    background-position: 9px -23px;
+    color:#65d5fd;
+}
+
+.baum .more .opt .optarea {
+    position: absolute;
+    top: 21px;
+    left: 0px;
+    background: #333;
+    width: 250px;
+    padding: 0px 2px 2px 7px;
+    display: none;
+}
+
+.baum .more .opt .optarea p {
+    background: url(../images/baum_line.png) repeat-x left top;
+    padding: 5px 0px 4px;
+}
+
+.baum .more .opt .optarea p a {
+    display: block;
+    padding: 6px 2px 6px 22px;
+    background: url(../images/baum_sprite.png) no-repeat 0px 0px;
+}
+
+.baum .more .optarea p a.add_child { background-position: 1px 6px ; }
+.baum .more .optarea p a.add_sibling { background-position: 1px -18px; }
+.baum .more .optarea p a.move_higher { background-position: 1px -48px; }
+.baum .more .optarea p a.move_another { background-position: 1px -72px; }
+.baum .more .optarea p a.rename { background-position: 1px -102px; }
+.baum .more .optarea p a.edit { background-position: 1px -102px; }
+.baum .more .optarea p a.delete { background-position: 1px -126px; }
+
+.baum .more .move {
+    float: right;
+    width: 40px;
+    height: 22px;
+    background: url(../images/baum_move.png) no-repeat center center;
+    cursor: move;
+}
+
+
+#weitere_se_optionen {
+	overflow: auto;
+}
+
+#weitere_se_optionen a.show_all {
+}
+
+#weitere_se_optionen .extend {
+    float: right;
+	font-size: 12px;
+    padding: 6px 0px 0px;
+}
+
+#weitere_se_optionen .hidden_elements {
+    display: block;
+	font-size: 12px;
+    clear: both;
+    text-align: right;
+    padding-top: 3px;
+}
+
+#weitere_se_optionen .mfa {
+	font-size: 12px;
+	width: 280px;
+	float: left;
+}
+
+#weitere_se_optionen .mfa a.rollin {
+	border-bottom: 1px solid #fff;
+	width: 230px;
+}
+
+#weitere_se_optionen .mfa p {
+	display: none;
+	background: #fff;
+	padding: 0px 1px 3px 17px;
+	width: 235px;
+	border: 1px solid #E9E9E9;
+	border-top: 0px;
+}
+
+#weitere_se_optionen .mfa p a {
+	display: block;
+	padding: 5px 0px;
+}
+
+
+#weitere_se_optionen .mfa p a.disabled {
+    cursor: text;
+    color: #888;
+    opacity: 0.7;
+}
+
+
+#strukturelemente .is_hidden {
+	display: none !important;
+}
+
+#strukturelemente .white.no_lan {
+	opacity: 0.5;
+}
+
+#strukturelemente .is_klasse .white {
+    background: #ccc url(../images/dklasse-pfeil.jpg) no-repeat 5px center;
+    opacity: 1;
+}
+
+#strukturelemente .is_mfa .is_klasse .white {
+    background: #ccc;
+}
+
+#strukturelemente .is_klasse .white a.name {
+    padding-left: 20px;
+}
+
+#strukturelemente .white a.name {
+    padding: 1px 20px 9px 6px;
+    line-height: 1.95;
+}
+
+#strukturelemente .white a.name.gesperrt {
+    background: url(../images/achtung.png) no-repeat 209px center;
+}
+
+#strukturelemente .white.childs a.name.gesperrt {
+    background: url(../images/achtung.png) no-repeat 200px center;
+}
+
+#strukturelemente .white a.name.lebensdauer {
+    background: url(../images/lebensdauer.png) no-repeat 209px center;
+}
+
+#strukturelemente .white.childs a.name.lebensdauer {
+    background: url(../images/lebensdauer.png) no-repeat 200px center;
+}
+
+#strukturelemente .white a.name.rollen {
+    background: url(../images/gesperrt.png) no-repeat 209px center;
+}
+
+#strukturelemente .white.childs a.name.rollen {
+    background: url(../images/gesperrt.png) no-repeat 200px center;
+}
+
+#strukturelemente .white span.select {
+    padding: 2px 20px 0px 6px;
+	display: block;
+	height: 20px;
+	overflow: hidden;
+}
+
+#strukturelemente .white span.select input {
+	float: left;
+}
+
+#strukturelemente .white span.select label {
+	float: left;
+	display: block;
+	padding: 0px 0px 0px 5px;
+	color: #333;
+    max-width: 160px;
+    line-height: 1.9;
+}
+  
+  
+#kategorien .baum .white a.name {
+    color: #222;
+    cursor: default;
+}
+  
+#kategorien .baum .white.chooseme a.name {
+    color: #084588;
+    cursor: pointer;
+}
+  
+#kategorien .baum .white p.renameit {
+    display: none;
+    padding: 0px;
+    height: 22px;
+}
+  
+#kategorien .baum .white p.renameit input {
+    width: 150px;
+    height: 20px;
+    padding: 1px 4px;
+    border: 0px;
+    border-right: 1px solid #aaa;
+    margin-right: 5px;
+    font-size: 12px;
+    font-style: italic;
+    background: #eee;
+}
+
+#menues .baum .white.no_lan {
+	opacity: 0.5;
+}
+
+
+.boxedtable {
+    font-size: 12px;
+    background: #fff;
+    border: 1px solid #bbb;
+    display: table;
+    width: 99%;
+}
+
+.boxedtable p {
+    display: table-row;
+}
+
+.boxedtable p > * {
+    display: table-cell;
+    padding: 10px 14px;
+    border-bottom: 1px dotted #ccc;
+    line-height: 1.3;
+    vertical-align: middle;
+}
+
+.boxedtable p > em {
+    width: 22px;
+}
+
+.boxedtable p span {
+    text-align: right;
+    color: #888;
+    font-size: 11px;
+}
+
+.boxedtable p:last-child > * {
+    border-bottom: 0px;
+}

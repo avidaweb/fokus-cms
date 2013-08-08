@@ -1,0 +1,1490 @@
+
+#fchangelog {
+    font-size: 12px;
+}
+
+#fchangelog ul {
+    border: 1px solid #bbb;
+    background: #fff;
+    display: block;
+    padding: 10px 14px;
+    margin-bottom: 12px;
+}
+
+#fchangelog ul li {
+    display: block;
+    padding: 4px 0px 5px 18px;
+    background: url(../images/rpfeil_rechts.png) no-repeat left 4px;
+}
+
+#fchangelog .box_save {
+    display: block;
+}
+
+#pnotizen {
+    font-size: 12px;
+}
+
+#fs110 .inhalt {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+.greybox {
+    background: #fafafa;
+    padding: 15px 18px;
+    border: 1px solid #eee;
+    margin-bottom: 30px;
+    color: #666;
+    font-size: 12px;
+}
+
+.fenster .greybox:last-child {
+    margin-bottom: 10px;
+}
+
+#persoein table {
+    margin: 15px 0px 10px;
+    width: 98%;
+}
+
+#persoein td {
+    padding: 6px 0px;
+}
+
+#persoein td.a {
+    width: 170px;
+}
+
+#persoein tr.firstrow td {
+    border-top: 1px dotted #a1a1a1;
+    padding-top: 9px;
+}
+
+#persoein tr.pw td {
+    border-top: 1px dotted #a1a1a1;
+    border-bottom: 1px dotted #a1a1a1;
+    padding: 9px 0px;
+}
+
+#persoein tr.pw td.b {
+    font-size: 11px;
+}
+
+#persoein .getnewpw {
+    display: none;
+    padding-top: 7px;
+}
+
+#persoein input, #persoein select {
+    width: 450px;
+}
+
+#persoein input.auto {
+    width: auto;
+}
+
+#persoein input.pw_t {
+    display: none;
+}
+
+#persoein .greybox {
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+
+#workflowo .greybox {
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+#workflowo table {
+    margin: 30px 0px 12px;
+}
+
+#workflowo td {
+    padding: 6px 0px;
+    color: #555;
+}
+
+#workflowo td.a {
+    padding-right: 15px;
+    width: 330px;
+    text-align: right;
+}
+
+#workflowo tr.aunten td {
+    padding-bottom: 24px;
+}
+
+#workflowo input.bild_w {
+    width: 40px;
+}
+
+#workflowo input.bild_h {
+    width: 40px;
+}
+
+#workflowo table.generell select {
+    width: 230px;
+}
+
+#s_start {
+    overflow: auto;
+}
+
+#s_start .s_left {
+    float: left;
+    width: 125px;
+}
+
+#s_start .s_right {
+    float: left;
+    width: 363px;
+}
+
+#s_start .s_right input {
+    width: 100%;
+}
+
+#s_start .s_right a {
+    margin-top: 4px;
+    display: inline-block;
+    padding: 5px 4px 5px 16px;
+    background: #fff url(../images/rpfeil_unten.png) no-repeat 2px center;
+}
+
+#s_optionen {
+    display: none;
+    padding-left: 145px; 
+}
+
+#sresult {
+    border: 0px;
+    background: #f4f4f4;
+}
+
+#sresult #stabs {
+    border: 0px;
+    padding:0px;
+    border-bottom:1px solid #CBCBCB;
+    background: #f4f4f4;
+}
+
+#sresult #stabs li {
+    border:1px solid #f4f4f4 !important;
+    font-size:11px;
+    margin:0px !important;
+    top:1px !important
+}
+
+#sresult #stabs li a {
+    border-radius:1px !important;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background: #f4f4f4;
+}
+
+#sresult #stabs li.ui-tabs-selected {
+    background: #fff;
+    border:1px solid #CBCBCB !important;
+    border-bottom: 1px solid #fff !important;
+    border-radius:1px !important;
+}
+
+#sresult #stabs li.ui-tabs-selected a {
+    color: #686868;
+    background: #fff;
+}
+
+#sresult .s_ergebnis {
+    padding: 16px 15px;
+    overflow: auto;
+    border: 1px solid #CBCBCB !important;
+    border-top: 0px !important;
+    background: #fff !important;
+    color: #676767;
+    font-size: 12px;
+}
+
+#sresult .s_kopf {
+    border-top: 1px dotted #aaa;
+    border-bottom: 1px dotted #aaa;
+    margin-bottom: 15px;
+}
+
+#sresult a.more_opt {
+    font-size: 11px;
+    display: inline-block;
+    padding: 5px 4px 5px 16px;
+    background: #fff url(../images/rpfeil_unten.png) no-repeat 2px center;
+}
+
+#sresult .opt {
+    padding-left: 20px;
+    margin-top: 15px;
+    display: none;
+    padding-bottom: 5px;
+}
+
+#sresult .opt table {
+    margin: 10px 0px 0px;
+}
+
+#sresult .opt table td {
+    padding: 1px 9px 1px 0px;
+    vertical-align: middle;
+}
+
+#sresult table.s_auflistung {
+    width: 100%;
+    font-size: 11px;
+}
+
+#sresult table.s_auflistung a, #sresult table.s_auflistung span {
+    cursor: pointer;
+}
+
+#sresult table.s_auflistung td span:hover {
+    text-decoration: underline;
+}
+
+#sresult table.s_auflistung tr#headline td {
+    font-weight: bold;
+    color: #555;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+#sresult table.s_auflistung td {
+    border-bottom:1px dotted #9D9D9D;
+    padding: 4px 15px 4px 0px;
+}
+
+#sresult table.s_auflistung td.last {
+    padding-right: 0px;
+    text-align: right;
+}
+
+#s_bilder .tpics {
+    overflow: auto;
+}
+
+#s_bilder .pre {
+    width: 75px;
+    height: 75px;
+    background: no-repeat left top;
+    margin: 7px 11px 15px;
+    border: 1px solid #666;
+    float: left;
+}
+
+#s_bilder .pre p { 
+    margin: 52px 0px 0px;
+    height: 22px;
+    background: #fff;
+    border-top: 1px solid #666;
+    color: #888;
+    font-size: 10px;
+    line-height: 1.0;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0px 0px 3px #111;
+    padding: 0px 2px;
+}
+
+#s_bilder .ui-selected p {
+    background: #0b96ea;
+    color: #fff;
+}
+
+#s_bilder .ui-selecting p {
+    color: #444;
+}
+
+#s_bilder .pre img {
+    cursor: pointer;
+    border: 1px solid #666;
+    display: none;
+    position: fixed;
+    z-index: 55555555;
+    background: #fff;
+}
+
+#s_bilder .pre span {
+    display: none;
+}
+
+#s_bilder .more {
+    overflow: auto;
+    float: none;
+    clear: both;
+    padding:6px 13px 6px;
+    border-top: 1px dotted #ccc;
+    background: #aaa;
+    color: #fff;
+    line-height: 1.5;
+}
+
+#s_bilder .more a {
+    color: #fff;
+    display: block;
+    padding-top: 0px !important;
+    font-size: 11px !important;
+}
+
+#s_bilder .dirs {
+    overflow: auto;
+    border-bottom: 1px dotted #ccc;
+    margin-bottom: 10px;
+}
+
+#s_bilder a.dir {
+    display: block;
+    width: 75px;
+    margin: 5px 12px 10px;
+    float: left;
+}
+
+#s_bilder .dirbr {
+    padding:8px 13px;
+    border-bottom: 1px dotted #ccc;
+    background: #aaa;
+    font-size: 11px;
+}
+
+#s_bilder .dirbr a {
+    font-weight: bold;
+    color: #fff;
+}
+
+#s_bilder .choose_dir {
+    padding:8px 13px;
+    border-bottom: 1px dotted #ccc;
+    background: #eee;
+    font-size: 11px;
+}
+
+#pics2gal {
+    display: none;
+}
+
+.ui-selectable-helper { 
+    z-index: 9999999999 !important;
+    border:1px dotted #0b96ea !important;
+}
+
+
+#fs420 .inhalt {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+#einstellungen {
+    border: 0px;
+    background: #f4f4f4;
+}
+
+#einstellungen #etabs {
+    border: 0px;
+    padding:0px;
+    border-bottom:1px solid #CBCBCB;
+    background: #f4f4f4;
+    overflow: hidden;
+    height: 0px;
+}
+
+#einstellungen #etabs li {
+    border:1px solid #f4f4f4 !important;
+    font-size:11px;
+    margin:0px !important;
+    top:1px !important
+}
+
+#einstellungen #etabs li a {
+    border-radius:1px !important;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background: #f4f4f4;
+}
+
+#einstellungen #etabs li.ui-tabs-selected {
+    background: #fff;
+    border:1px solid #CBCBCB !important;
+    border-bottom: 1px solid #fff !important;
+    border-radius:1px !important;
+}
+
+#einstellungen #etabs li.ui-tabs-selected a {
+    color: #686868;
+    background: #fff;
+}
+
+#einstellungen .etab {
+    padding: 16px 15px;
+    overflow: auto;
+    border: 1px solid #CBCBCB !important;
+    border-top: 0px !important;
+    background: #fff !important;
+    color: #676767;
+    font-size: 12px;
+}
+
+#einstellungen h2.templ {
+    float: left;
+    display: block;
+    width: 230px;
+}
+
+#einstellungen #noseo, #einstellungen #www {
+    width: 200px;
+}
+
+#einstellungen .templates {
+    float: left;
+    width: 496px;
+}
+
+#einstellungen .template {
+    width: 496px;
+    overflow: auto;
+    border-bottom: 1px dotted #bbb;
+    padding-bottom: 14px;
+    margin-bottom: 20px;
+}
+
+#einstellungen .template .screenshot {
+    width: 120px;
+    border: 1px solid #eee;
+    margin-right: 20px;
+    float: left;
+}
+
+#einstellungen .template .screenshot span {
+    color: #ccc;
+    font-size: 10px;
+    text-align: center;
+    padding: 30px 0px;
+    display: block;
+}
+
+#einstellungen .template table {
+    float: left;
+    width: 350px;
+}
+
+#einstellungen .template table strong {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+#einstellungen .template table td {
+    padding: 2px 0px;
+}
+
+#einstellungen .template table td.fi {
+    width: 160px;
+}
+
+#einstellungen .template table td.unten {
+    text-align: right;
+    padding-top: 10px;
+}
+
+#fs420 .box {
+    overflow: auto;
+}
+
+#fs420 #slider_thumb {
+    width: 99%;
+}
+
+#fs420 #thumb_quality {
+    width: 40px;
+}
+
+#fs420 .ebox {
+    overflow: auto;
+    border-bottom: 1px dotted #bbb;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#fs420 .ebox:last-child {
+    border-bottom: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#fs420 .templ1 {
+    margin-bottom: 16px;
+}
+
+#fs420 .templ2 {
+    border-bottom: 0px dotted #bbb;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#fs420 strong.ls {
+    float: left;
+    width: 170px;
+    padding-top: 5px;
+}
+
+#fs420 div.rs {
+    float: left;
+    width: 529px;
+    padding-top: 5px;
+}
+
+#fs420 div.rd {
+    padding: 5px 0px 5px 90px;
+}
+
+#fs420 div.rd h2 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    color: #666;
+}
+
+#fs420 div.rd .betreiber td {
+    text-align: left;
+}
+
+#fs420 div.rd .betreiber td.a {
+    width: 150px;
+}
+
+#fs420 div.rd .betreiber td.key strong {
+    color: #d20000;
+    display: block;
+}
+
+#fs420 div.rd .betreiber td.key input {
+    display: none;
+}
+
+#fs420 .betreiber {
+    width: 100%;
+}
+
+#fs420 .betreiber td {
+    padding-bottom: 5px;
+    text-align: right;
+}
+
+#fs420 .betreiber td:first-child {
+    padding-right: 37px;
+    text-align: left;
+}
+
+#fs420 .betreiber td span {
+    font-size: 10px;
+}
+
+#fs420 .betreiber td input {
+    width: 340px;
+}
+
+#fs420 .lizenz {
+    text-transform: uppercase;
+    padding-bottom: 12px;
+}
+
+#fs420 .sprachen a {
+    display: inline-block;
+    padding: 5px 4px 5px 16px;
+    background: #fff url(../images/rpfeil_unten.png) no-repeat 2px center;
+}
+
+#fs420 #sprachenuebersicht {
+    display: table;
+    width: auto;
+    margin: 15px 0px;
+}
+
+#fs420 #sprachenuebersicht td {
+    background: none;
+    width: auto;
+}
+
+#fs420 #sprachenuebersicht td strong {
+    text-transform: uppercase;
+}
+
+#fs420 .sprachen table {
+    display: none;
+    width: 100%;
+    margin: 10px;
+}
+
+#fs420 .sprachen table tr.bg2 td {
+    background: #efefef;
+}
+
+#fs420 .sprachen table td {
+    padding: 2px 5px;
+    width: 20px;
+    background: #e5e5e5;
+    vertical-align: middle;
+}
+
+#fs420 .sprachen table td label {
+    cursor: pointer;
+}
+
+#fs420 .sprachen table td.first {
+    max-width: 40px;
+}
+
+#fs420 .sprachen table td.hinten {
+    text-align: right;
+}
+
+#fs420 .sprachen table td img {
+    margin-right: 10px;
+}
+
+#fs420 .sicherheit {
+    padding-bottom: 4px;
+}
+
+#fs420 .sicherheit p {
+    padding-bottom: 8px;
+}
+
+#fs420 .sicherheit input {
+    width: 50px;
+    margin: 0px 6px;
+}
+
+#fs420 .sicherheit input#login_captcha {
+    width: auto;
+    margin-left: 1px;
+}
+
+#einstellungen #e_set_system .seo table {
+    margin-top: 0px;
+}
+
+#einstellungen #e_set_system .seo table td {
+    padding: 0px 15px 12px 0px;
+}
+
+#einstellungen #e_set_system .media_daten table {
+    margin-bottom: 0px;
+}
+
+#einstellungen .experte iframe {
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+#fs420 .at {
+    float: none;
+}
+
+#fs420 .at .ue {
+    padding-bottom: 7px;
+}
+
+#fs420 .at .ue strong {
+    font-size: 14px;
+}
+
+#fs420 .at .nds {
+    font-size: 11px;
+}
+
+#fs420 .at .ue img {
+    float: left;
+    margin-right: 6px;
+}
+
+#fs420 .at .las td {
+    padding-bottom: 8px !important;
+    padding-top: 1px !important;
+}
+
+#fs420 .at .cf td {
+    vertical-align: top;
+    padding-top: 10px !important;
+}
+
+#fs420 .at .cf td input {
+    width: 500px;
+}
+
+#fs420 .at .cf td textarea {
+    width: 500px;
+    height: 100px;
+}
+
+#fs420 .at .cf td label {
+    display: block;
+    float: left;
+    width: 150px;
+    font-style: italic;
+    font-size: 12px;
+}
+
+#fs420 .at tr.lastbeforecf td {
+    border-bottom: 1px dotted #ccc;
+}
+
+#fs420 .at table {
+    width: 100%;
+    margin-bottom: 9px;
+    border: 1px solid #eee;
+}
+
+#fs420 .at table td {
+    font-size: 10px;
+    background: #fafafa;
+    padding: 6px 7px 2px 7px !important;
+}
+
+#fs420 .at table td strong {
+    font-size: 12px;
+}
+
+#fs420 .at table td input {
+    width: 255px;
+}
+
+
+#einstellungen #e_set_system table {
+    margin: 10px 0px 12px;
+}
+
+#einstellungen #e_set_system table td {
+    padding: 2px 20px 2px 0px;
+}
+
+#einstellungen #e_set_backup {
+    font-size: 12px;
+}
+
+#einstellungen #e_set_backup h2 {
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+#einstellungen #e_set_backup table {
+    margin: 15px 0px 22px;
+    font-weight: bold;
+    width: 80%;
+}
+
+#einstellungen #e_set_backup table input {
+    width: 220px;
+}
+
+#einstellungen #e_set_backup table td.b {
+    font-weight: normal;
+    text-align: right;
+}
+
+#einstellungen #e_set_backup #bstatus {
+    border-top: 1px dotted #ccc;
+    padding-top: 12px;
+    display: none;
+}
+
+#einstellungen #e_set_backup #db_import {
+    border-top: 1px dotted #ccc;
+    padding-top: 12px;  
+    margin-top: 4px;  
+}
+
+#einstellungen #e_set_backup #db_import .ifehler {
+    display: none;
+}
+
+#einstellungen #e_set_backup #db_import .iok {
+    display: none;
+}
+
+#einstellungen #e_set_backup #db_import p {
+    padding-bottom: 10px;
+}
+
+#einstellungen #e_set_backup #db_import .file {
+    margin-top: 14px;
+}
+
+#einstellungen #e_set_backup #db_import label {
+    float: left;
+    width: 150px;
+}
+
+#einstellungen #e_set_fehler strong.ls {
+    padding-top: 8px;
+}
+
+#einstellungen #e_set_fehler table td {
+    padding: 2px 20px 10px 0px;
+}
+
+#einstellungen #e_set_fehler .errorbox {
+    padding-bottom: 16px;
+}
+
+#einstellungen #e_set_fehler .errorbox:last-child {
+    padding-bottom: 0px;
+}
+
+#einstellungen #e_set_fehler .errorbox h2 {
+    padding-bottom: 1px;
+}
+
+#einstellungen #e_set_fehler .errorbox p {
+    padding-bottom: 3px;
+}
+
+#fserrors {
+    font-size: 12px;
+    line-height: 1.3;
+}
+
+#fserrors p {
+    padding-bottom: 10px;
+}
+
+#fserrors textarea {
+    width: 99%;
+    height: 350px;
+    margin-bottom: 15px;
+}
+
+
+#einstellungen #dkform h3.calibri {
+    font-size: 17px;
+    font-weight: normal;
+}
+
+#einstellungen #dkform .infotext {
+    padding: 5px 0px 20px;
+}
+
+#einstellungen #dkform .greybox {
+    font-size: 12px;
+}
+
+#einstellungen #dkform .showmore {
+    display: none;
+}
+
+#einstellungen #dkform h2.calibri {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+#einstellungen #dkform .show_color {
+    padding: 8px 0px 0px 25px;
+}
+
+#einstellungen #dkform .colorSelector {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #fff;
+    line-height: 1;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+#einstellungen #dkform .top {
+    padding: 10px 0px;
+    border-top: 1px dotted #ccc;
+    border-bottom: 1px dotted #ccc;
+    margin: 10px 0px 5px;
+}
+
+#einstellungen #dkform .top p {
+    padding: 2px 0px;
+}
+
+#einstellungen #dkform .auto {
+    padding: 2px 0px 12px;
+    border-bottom: 1px dotted #ccc;
+    margin: 0px 0px 10px;
+}
+
+#einstellungen #dkform .auto p {
+    padding: 3px 0px;
+}
+
+#einstellungen #dkform .auto table.select {
+    display: none;
+    margin: 3px 0px;
+}
+
+#einstellungen #dkform .auto table.select td {
+    padding: 4px 5px;
+}
+
+#einstellungen #dkform .auto table.select .first select {
+    width: 190px;
+}
+
+#einstellungen #dkform .auto table.select .second td {
+    padding-top: 15px;
+    background: url(../images/kl_gr_pfeil_oben.png) no-repeat 10px 2px;
+}
+
+#einstellungen #dkform .auto table.select .second td.nobg {
+    background: none;
+}
+
+#einstellungen #dkform .atr {
+    padding: 15px 0px 8px;
+    overflow: auto;
+    border-bottom: 1px dotted #dedede;
+}
+
+#einstellungen #dkform .atr .titel {
+    float: left;
+    width: 166px; 
+    font-size: 11px;
+}
+
+#einstellungen #dkform .atr .titel strong {
+    font-size: 13px;
+    padding-right: 4px;
+    display: block;
+}
+
+#einstellungen #dkform .atr .opt {
+    float: right;
+    width: 490px;
+}
+
+#einstellungen #dkform .atr .opt table.more {
+    margin: 9px 0px 0px 0px;
+    font-size: 11px;
+    width: 99%;
+    display: none;
+}
+
+#einstellungen #dkform .atr .opt table.rmore {
+    display: table;
+}
+
+#einstellungen #dkform .atr .opt table.more select {
+}
+
+#einstellungen #dkform .atr .opt table.more td {
+    padding: 3px 5px 3px 0px;
+}
+
+#einstellungen #dkform .atr .opt table.more td.a {
+    padding-left: 22px;
+}
+
+#einstellungen #dkform .atr .opt table.more td.c {
+    padding-left: 22px;
+}
+
+#einstellungen #dkform .atr .opt table.more td.c span {
+    color: #999;
+}
+    
+
+
+#sessioninfo {
+    width: 100%;
+}
+
+#sessioninfo td {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+
+#letzte_inhalte {
+    width: 780px;  
+}
+
+#letzte_inhalte td {
+    border-right: 20px solid #f4f4f4;
+    border-bottom: 20px solid #f4f4f4;
+    background: #fff;
+    vertical-align: top;
+}
+
+#letzte_inhalte .second td {
+    border-bottom: 0px solid #f4f4f4;
+}
+
+#letzte_inhalte td.last {
+    border-right: 0px solid #f4f4f4;
+}
+
+#letzte_inhalte td .cont {
+    width: 180px;
+    min-height: 170px;
+    line-height: 1.4;
+    overflow: hidden;
+}
+
+#letzte_inhalte td .cont strong a {
+    font-size: 12px;  
+}
+
+#letzte_inhalte td .cont p {
+    margin-bottom: 12px;
+}
+
+#letzte_inhalte td .cont .text {
+    padding: 14px 12px 5px;
+}
+
+#letzte_inhalte td .cont .bild {
+    padding: 6px;
+}
+
+#fs120 button.get_more {
+    margin-top: 15px;
+}
+
+
+#fs450 h1 {
+    border: 0px;
+    margin: 20px 0px 10px;
+    color: #555;
+}
+
+#fs450 .box {
+    border-top: 0px;
+}
+
+#foresight .overview {
+    margin: 12px auto;
+    background: #fff;
+    width: 525px;
+    padding: 10px 12px;
+}
+
+#foresight .overview table td {
+    vertical-align: bottom;
+    padding: 4px 7px 4px 0px;
+}
+
+#foresight .datum {
+    width: 80px;
+}
+
+#foresight .A {
+    padding: 0px 10px 0px 0px;
+}
+
+#foresight .B {
+    padding: 0px 10px 0px 20px;
+}
+
+#foresight .C {
+    padding: 0px 0px 0px 10px;
+}
+
+#foresight img {
+    padding: 0px 0px 0px 5px;
+}
+
+#foresight .box_save {
+    display: block;
+}
+
+
+#fs310 .csb {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+#fs310 .csb table {
+    width: auto;
+    margin: 15px 0px;
+}
+
+#fs310 .csb td {
+    padding: 3px 7px 3px 0px;
+    vertical-align: middle;
+}
+
+
+
+#fck_link {
+    font-size: 12px;
+}
+
+#fck_link .bereich {
+    padding: 8px;
+    background: #fff;
+    margin: 10px 0px;
+}
+
+#fck_link table {
+    width: 100%;
+}
+
+#fck_link table td {
+    padding: 3px 0px;
+}
+
+#fck_link table td.radio {
+    width: 30px;
+}
+
+#fck_link table td.beschr {
+    width: 150px;
+}
+
+#fck_link table td.inp {
+    font-size: 10px;
+    color: #999;
+}
+
+#fck_link table td.inp input {
+    width: 250px;
+}
+
+#fck_link table tr.dkop td {
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+#fck_link a#fck_opt_more {
+    display: block;
+    padding: 5px 4px 5px 16px;
+    background: #fff url(../images/rpfeil_unten.png) no-repeat 2px center;
+    font-size: 12px;
+}
+
+#fck_link tr.fck_opt_more td {
+    display: none;
+}
+
+#fck_link tr.extclass td {
+    vertical-align: top;
+}
+
+#fck_link tr.extclass td.beschr {
+    padding-top: 8px;
+}
+
+#fck_link a#fck_opt_more {
+    display: block;
+    padding: 5px 4px 5px 16px;
+    background: #fff url(../images/rpfeil_unten.png) no-repeat 2px center;
+    font-size: 12px;
+} 
+
+#fck_link .versteckt tr.tr_e td, #fck_link .versteckt tr.tr_i td, #fck_link .versteckt tr.tr_d td, #fck_link .versteckt tr.tr_m td {
+    display: none;
+}
+
+#fck_link h4 {
+    font-size: 12px;
+    margin: 8px 0px 12px;
+    color: #999;
+}
+
+#fck_link .searche {
+    padding: 4px;
+    margin: 3px 0px 12px;
+    border: 1px solid #e3e3e3;
+    background: #f3f3f3;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+#fck_link .searche input {
+    width: 190px;
+}
+
+#fck_link .own {
+    background: #e4e4e4;
+    margin-bottom: 6px;
+    font-size: 11px;
+    padding: 0px 1px;
+    width: 340px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px #eee;
+    height: 19px;
+}
+
+#fck_link .delement .own {
+    background: #eaeaea;
+}
+
+#fck_link .own input {
+    float: left;
+    display: block;
+    margin-right: 12px;
+}
+
+#fck_link .own label {
+    float: left;
+    display: block;
+    padding: 4px 0px 3px;
+    width: 275px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#fck_link .own span {
+    width: 20px;
+    display: block;
+    float: right;
+    cursor: pointer;
+    height: 19px;
+    background: url(../images/rpfeil_unten.png) no-repeat 5px center;
+}
+
+#fck_link span.aktiv {
+    background: url(../images/rpfeil_oben.png) no-repeat 5px center;
+}
+
+#fck_link .nelemente {
+    margin-left: 24px;
+    display: none;
+}
+
+
+
+#fs110 #search_box {
+    overflow: auto;
+    font-size: 12px;
+}
+
+#fs110 #search_box label {
+    float: left;
+    padding-top: 2px;
+}
+
+#fs110 #search_box input {
+    float: right;
+    width: 238px;
+}
+
+#last_use table {
+    width: 100%;
+}
+
+#last_use table td {
+    font-size: 12px;
+    border-bottom: 6px solid #f4f4f4;
+    background: #fff;
+    padding: 12px 32px 12px 16px;
+    vertical-align: middle;
+}
+
+#last_use table tr.bild td.goto {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#last_use table tr.bild td.goto img {
+    float: left;
+    display: block;
+    margin-right: 10px;
+}
+
+#last_use table tr.bild td.goto span {
+    display: block;
+    padding: 10px 0px 0px 0px;
+}
+
+#last_use table td:last-child {
+    text-align: right;
+    padding-right: 16px;
+}
+
+#last_use table td.goto {
+    text-align: left;
+}
+
+#last_use table td.goto small {
+    font-size: 11px;
+    opacity: 0.72;
+    padding-right: 10px;
+}
+
+#last_use table td.nothing_found {
+    text-align: center;
+    font-size: 24px;
+    padding: 15px 0px;
+    color: #ccc;
+    background: #fff;
+}
+
+#last_use table td.more_results {
+    text-align: left;
+    font-size: 14px;
+    padding: 7px 0px;
+    background: #fff;
+}
+
+#last_use table td.more_results a {
+    display: block;
+    padding: 6px 10px;
+}
+
+#last_use table td.loading {
+    text-align: center;
+    padding: 15px 0px;
+    background: #fff;
+}
+
+
+
+.box.pure {
+    font-size: 12px;
+    line-height: 1.3;
+}
+
+.box.pure article {
+    border-top: 1px dotted #a1a1a1;
+    padding-top: 16px;
+    margin-top: 16px;
+}
+
+.box.pure article:first-child {
+    border-top: 0px solid #a1a1a1;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.box.pure article:last-child {
+    padding-bottom: 15px;
+}
+
+.box.pure article p {
+    padding: 4px 0px;
+    overflow: auto;
+    clear: both;
+}
+
+.box.pure article aside {
+    padding: 5px 0px 10px 40px;
+    display: none;
+}
+
+.box.pure article div.tab {
+    padding-bottom: 14px;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #ccc;
+}
+
+.box.pure article div.tab p {
+    padding: 3px 0px;
+}
+
+.box.pure article div.tab:last-child {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    border-bottom: 0px;
+}
+
+.box.pure article div.tab p.padding_top {
+    padding-top: 14px;
+}
+
+.box.pure ul.info {
+    background: #fff;
+    box-shadow: 0px 0px 2px #ddd;
+    color: #999;
+    margin: 6px 0px 22px;
+    display: inline-block;
+    padding: 7px 10px;
+}
+
+.box.pure ul.info li {
+    padding: 2px 0px;
+}
+
+.box.pure ul.info strong {
+    font-weight: normal;
+    color: #555;
+}
+
+.box.pure .progress {
+    margin: 10px 0px 22px;
+}
+
+
+
+#extension-info {
+    font-size: 13px;
+    text-align: center;
+}
+
+#extension-dashboard {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+#extension-dashboard .ext {
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 10px 12px;
+    margin: 12px 0px;
+    overflow: auto;
+}
+
+#extension-dashboard .ext.deactivated {
+    background: #f9f9f9;
+    border: 1px dotted #ccc;
+}
+
+#extension-dashboard .ext .check {
+    float: left;
+    width: 25px;
+    padding-top: 3px;
+    display: none;
+}
+
+#extension-dashboard .ext .r {
+    /*float: right;
+    width: 540px; */
+}
+
+#extension-dashboard .ext h2 {
+    padding: 0px 0px 4px;
+}
+
+#extension-dashboard .ext img {
+    float: right;
+    max-width: 150px;
+}
+
+#extension-dashboard .ext .meta {
+    font-size: 11px;
+    color: #444;
+    padding: 8px 0px 0px;
+}
+
+#extension-dashboard .ext .meta span {
+    font-weight: bold;
+    color: #888;
+}
+
+#extension-dashboard .ext .meta a.action {
+    color: red;
+    font-size: 11px;
+    opacity: 0.8;
+    font-weight: normal;
+}
+
+#extension-dashboard .ext.deactivated .meta a.action {
+    color: green;
+    font-size: 12px;
+    font-weight: bold;
+}

@@ -1,0 +1,1008 @@
+#bilderC {
+    border: 0px;
+    background: #fff;
+    padding: 0px;
+}
+
+#bilderN {
+    border: 0px;
+    padding:0px;
+    border-bottom:1px solid #CBCBCB;
+    background: #f4f4f4;
+    overflow: hidden;
+    height: 0px;
+}
+
+#bilderN li {
+    border:1px solid #f4f4f4 !important;
+    font-size:11px;
+    margin:0px !important;
+    top:1px !important
+}
+
+#bilderN li a {
+    border-radius:1px !important;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background: #f4f4f4;
+}
+
+#bilderN li.ui-tabs-selected {
+    background: #fff;
+    border:1px solid #CBCBCB !important;
+    border-bottom: 1px solid #fff !important;
+    border-radius:1px !important;
+}
+
+#bilderN li.ui-tabs-selected a {
+    color: #686868;
+    background: #fff;
+}
+
+.bilderM {
+    padding: 0px 0px;
+    overflow: auto;
+    border: 1px solid #CBCBCB !important;
+    border-top: 0px !important;
+}
+
+.bilderM .left {
+    width: 165px;
+    margin-right: 12px;
+    float: left;
+}
+
+.bilderM .left .dir p {
+    padding:5px 0px 17px 20px;
+    font-weight: bold;
+    border-bottom: 1px dotted #ddd;
+    margin: 0px 0px 10px;
+    background: url("../images/dir.png") no-repeat left top;
+}
+
+.bilderM .left hr {
+    border-color:#efefef;
+}
+
+.bilderM .right {
+    width: 250px;
+    margin-left: 12px;
+    float: right;
+}
+
+.bilderM .mitte {
+    float: left;
+    padding:0px;
+}
+
+.bilderM .mitte .container {
+    background: #525252;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.bilderM .mitte .container .haupt {
+    overflow: auto;
+    position: relative;
+    background: #666;
+}
+
+.bilderM .mitte .container .obenL, .bilderM .mitte .container .obenR, .bilderM .mitte .container .hauptL, .bilderM .mitte .container .hauptR, .bilderM .mitte .container .untenL, .bilderM .mitte .container .untenR {
+    width: 24px;
+    cursor: pointer;
+    background: #525252;
+}
+
+.bilderM .mitte .container .obenL, .bilderM .mitte .container .hauptL, .bilderM .mitte .container .untenL {
+    border-right: 1px solid #fff;
+}
+
+.bilderM .mitte .container .obenR, .bilderM .mitte .container .hauptR, .bilderM .mitte .container .untenR {
+    border-left: 1px solid #fff;
+}
+
+.bilderM .mitte .container .obenL, .bilderM .mitte .container .untenL {
+    background: url("../images/pfeil_l.jpg") no-repeat center center;
+    min-height: 44px;
+}
+
+.bilderM .mitte .container .obenR, .bilderM .mitte .container .untenR {
+    background: url("../images/pfeil_r.jpg") no-repeat center center;
+    min-height: 44px;
+}
+
+.bilderM .mitte .container .oben {
+    overflow: auto;
+}
+
+.bilderM .mitte .container .unten {
+    overflow: auto;
+}
+
+.bilderM .mitte .container .obenM, .bilderM .mitte .container .untenM {
+    padding:12px 0px;
+    background: #999;
+    border-bottom: 1px solid #E5E5E5;
+    border-top: 0px;
+    overflow: auto;
+    color: #333;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.bilderM .mitte .container .untenM {
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 0px;
+}
+
+.bilderM .mitte .container .bsuche {
+    float: left;
+    width:230px;
+    padding-left: 19px;
+}
+
+.bilderM .mitte .container .bsuche input {
+    max-width: 150px;
+}
+
+.bilderM .mitte .container .mauswahl {
+    float: left;
+    width: 160px;
+    padding-left: 19px;
+}
+
+.bilderM .mitte .container .bgr {
+    float: right;
+    width:330px;
+    padding-top: 6px;
+}
+
+.bilderM .mitte .container .bgr .wslider {
+    width:230px;
+    display: inline-block;
+    background: #999 url("../images/slider.png") repeat-x center 1px;
+    height: 10px;
+    border: 0px;
+}
+
+.bilderM .mitte .container #hauptLoading .center {
+    background: #666;
+    text-align: center;
+    padding: 10px 0px 5px;
+}
+
+.bilderM .mitte .container #hauptLoading .center img {
+    display: inline-block;
+}
+
+.bilderM .mitte .container .haupt .board {
+    min-height: 40px;
+}
+
+.bilderM .mitte .container .haupt #real_pics {
+    overflow: auto;
+}
+
+.bilderM .mitte .container .haupt .board .boardrow {
+    overflow: auto;
+    border-bottom: 1px solid #A8A8A8;
+    padding:12px 0px;
+}
+
+.bilderM .mitte .container .haupt .board .boardrow_1 {
+    background-color: #525252;
+}
+
+.bilderM .mitte .container .haupt .board .boardrow_2 {
+    background-color: #666;
+}
+
+.bilderM .mitte .container .haupt .board .boardrow_more {
+    padding: 0px;
+}
+
+.bilderM .mitte .more {
+    padding:0px 13px;
+}
+
+.bilderM .mitte .more a {
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    margin: 12px 0px;
+    font-size: 10px;
+}
+
+.bilderM .mitte #dir_struktur {
+    padding:8px 13px;
+    border-bottom: 1px dotted #A8A8A8;
+    background: #666;
+    color: #eee;
+}
+
+.bilderM .mitte #dir_struktur a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.bilderM .mitte #dir_struktur a:hover {
+    text-decoration: underline;
+}
+
+.board .not_found {
+    font-size: 30px;
+    color: #888;
+    padding: 18px 0px;
+    text-align: center;
+    overflow: auto;
+}
+
+#dateien .not_found {
+    font-size: 30px;
+    color: #ccc;
+    padding: 18px 0px;
+    text-align: center;
+    overflow: auto;
+}
+
+#f490 .inhalt {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.bilderM .mitte .container .haupt .board .one {
+    float: left;
+    margin:0px 35px 0px 8px;
+    padding: 13px 3px 3px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px; 
+    cursor: pointer;
+}
+
+.bilderM .mitte .container .haupt .board .ui-selected {
+    background: #376885 !important;
+    border: 1px solid #fff;
+    padding: 12px 2px 2px;
+}
+
+.bilderM .mitte .container .haupt .board .one:hover, .bilderM .mitte .container .haupt .board .ui-selecting {
+    background: #333;
+    border: 1px solid #fff;
+    padding: 12px 2px 2px;
+}
+
+.bilderM .mitte .container .haupt .board .one .thumb {
+}
+
+.bilderM .mitte .container .haupt .board .one img {
+    width: 98%;
+    border: 1px solid #000;
+    z-index: 150;
+    display: block;
+}
+
+.bilderM .mitte .container .haupt .board .one.notfound img {
+    border: 0px solid red;
+    max-width: 48px;
+    height: auto;
+}
+
+.bilderM .mitte .container .haupt .board .ordner img {
+    border: 0px;
+}
+
+.bilderM .mitte .container .haupt .board .one .schatten {
+    background: #fff;
+    border:1px solid #000;
+    position: absolute;
+    z-index: 3;
+}
+
+.bilderM .mitte .container .haupt .board .one .titel {
+    overflow:hidden;
+    padding-top: 2px;
+    height: 21px;
+    font-size: 10px;
+    color:#fff;
+}
+
+
+.bilderM #backbuttond {
+    display: none;
+}
+
+.bilderM .right .bsuche input {
+    width: 98%;
+    margin: 0 auto;
+}
+
+.bilderM .right #vorschau {
+    overflow: hidden;
+    width: 100%;
+}
+
+.bilderM .right #vorschau .bigimg {
+    display: block;
+    text-align: center;
+}
+
+.bilderM .right #vorschau table {
+    margin: 11px 0px;
+}
+
+.bilderM .right #vorschau table td {
+    width: 50%;
+    color: #6A6A6A;
+    font-size: 11px;
+    padding: 5px 5px;
+}
+
+.bilderM .right #vorschau h3 {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 2px 0px 1px;
+    overflow: hidden;
+    width: 185px;
+} 
+
+.bilderM .right #vorschau .bschr {
+    font-style: italic;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.bilderM .right #vorschau button {
+    margin-bottom: 5px;
+    display: block;
+    width: 200px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.bilderM .right #vorschau span.trenn {
+    display: block;
+    margin: 10px 0px;
+    border-bottom: 1px dotted #bbb;
+}
+
+.bilderM .right #vorschau span.va_no {
+    color: #f74242;
+}
+
+
+
+
+#dateien .one {
+    overflow: auto;
+    padding: 5px 0px;
+    cursor: pointer;
+}
+
+#dateien .one_1 {
+    background: #f8f8f8;
+}
+
+#dateien .ui-selected {
+    background: #eee !important;
+}
+
+#dateien .one .thumb {
+    float: left;
+    width:60px;
+    text-align: center;
+}
+
+#dateien .one .info {
+    float: left;
+}
+
+#dateien .one .info p {
+    color: #999;
+    font-size: 11px;
+    padding-top: 7px;
+}
+
+#dateien .one .info a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#dateien .one .info a:hover {
+    text-decoration: underline;
+}
+
+#dateien .one .info p span.va_no {
+    color: #e75b5b;
+}
+
+
+
+#fn406 {
+    font-size: 12px;
+}
+
+#fn406 article {
+    padding: 15px 0px;
+    border-bottom: 1px dotted #bbb;
+}
+
+#fn406 article:last-child {
+    padding-bottom: 0px;
+    border-bottom: 0px;
+}
+
+#fn406 article:first-child {
+    padding-top: 0px;
+}
+
+
+#fn480 {
+    width: 620px;
+}
+
+#fn480 .choue {
+    font-weight: bold;
+    font-size: 12px;
+    border-top: 0px;
+}
+
+#fn480 .own {
+    overflow: auto;
+    width: 550px;
+    height: 29px;
+}
+
+#fn480 .own .titel {
+    float: left;
+    width: 280px;
+}
+
+#fn480 .own .titel span {
+    display: block;
+    padding-left: 13px;
+    background: url("../images/dir_pfad.png") no-repeat left top;
+}
+
+#fn480 .own .titel a {
+    display: block;
+    padding: 9px 0px 9px 23px;
+    background: url("../images/dir.png") no-repeat left 3px;
+}
+
+#fn480 .aktiv .titel a {
+    font-weight: bold;
+}
+
+#fn480 .own .titel input {
+    display: none;
+    width: 120px;
+    font-size: 11px;
+    font-family: 'Lucida Grande', Arial, sans-serif;
+    margin-top: 5px;
+}
+
+#fn480 .own .titel strong {
+    display: none;
+}
+
+#fn480 .own .options {
+    float: left;
+    text-align: right;
+    width: 250px;
+    padding: 9px 0px;
+}
+
+#fn480 .own .options a, #fn480 .own .options span {
+    display: none;
+}
+
+#fn480 .own .drag {
+    width: 20px;
+    height: 18px;
+    float: right;
+    background: url("../images/move.png") no-repeat scroll right center transparent;
+    cursor: move;
+}
+
+#fn480 .o_null .titel span {
+    padding-left: 13px;
+    background: none;
+}
+
+#fn480 .o_0 .titel span {    margin-left: 20px; }
+#fn480 .o_1 .titel span {    margin-left: 40px; }
+#fn480 .o_2 .titel span {    margin-left: 60px; }
+#fn480 .o_3 .titel span {    margin-left: 75px; }
+#fn480 .o_4 .titel span {    margin-left: 85px; }
+#fn480 .o_5 .titel span {    margin-left: 90px; }
+#fn480 .o_6 .titel span {    margin-left: 95px; }
+#fn480 .o_7 .titel span {    margin-left: 100px; }
+
+
+.pic_edit_data {
+    font-size: 12px;
+}
+
+.pic_edit_data p {
+    padding: 6px 0px;
+}
+
+.pic_edit_data label {
+    display: block;
+    font-size: 14px;
+}
+
+.pic_edit_data input[type=text], .pic_edit_data textarea {
+    width: 98%;
+}
+
+.pic_edit_data textarea {
+    height: 35px;
+}
+    
+
+#picedit .area {
+    width: 876px;
+    overflow: auto;
+    padding: 15px 12px 15px 20px;
+    margin: 20px auto 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ccc;
+    background: #fff;
+}
+
+#picedit .aL {
+    float: left;
+    width: 660px;
+    background: url(../images/zp.png) no-repeat right top;
+    padding-top: 60px;
+}
+
+#picedit .aL img {
+}
+
+#picedit .aL .desc {
+    font-size: 13px;
+    color: #888;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 13px;    
+}
+
+#picedit .aL .desc span {
+    display: none;
+}
+
+#picedit #table_zuschnitt {
+    display: none;
+}
+
+#picedit .trenn {
+    display: block;
+    margin: 12px 0px;
+    border-bottom: 1px dotted #ccc;
+}
+
+#picedit .croparea span {
+    display: block;
+    width: 55px;
+    height: 55px;
+    margin: 0px 6px 6px 0px;
+    background: #eee;
+    float: left;
+    cursor: pointer;
+}
+
+#picedit .croparea span:hover {
+    background: #ddd;
+}
+
+#picedit .croparea span.active {
+    background: #d1d1d1;
+}
+
+#picedit .aR {
+    float: right;
+    width: 210px;
+    padding-top: 45px;
+    overflow: hidden;
+}
+
+#picedit .aR table {
+    margin: 5px 0px;
+}
+
+#picedit .aR table td {
+    width: 50%;
+    color: #6A6A6A;
+    font-size: 11px;
+    padding: 5px 5px;
+}
+
+#picedit .aR h3 {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 2px 0px 1px;
+    text-align: left;
+} 
+
+#picedit .aR .titeldesc {
+    padding: 3px;
+}
+
+#picedit .aR .titeldesc input {
+    width: 99%;
+    margin: 4px 0px 0px;
+}
+
+#picedit .aR table.zuschnitt td {
+    width: auto;
+    padding: 3px;
+}
+
+#picedit .aR table.zuschnitt input {
+    width: 50px;
+}
+
+#picedit .aR #saturation {
+    width: 95%
+}
+
+#picedit .aR table.saettigung {
+    width: 100%;
+}
+
+#picedit .aR table.saettigung td {
+    width: auto;
+    padding: 3px;
+}
+
+#picedit .aR table.saettigung input {
+    width: 25px;
+}
+
+
+
+#dzs .zp {
+    width: 856px;
+    overflow: auto;
+    padding: 15px 20px;
+    margin: 20px auto 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ccc;
+    background: #fff;
+}
+
+#dzs .zpL {
+    float: left;
+    width: 670px;
+    background: url(../images/zp.png) no-repeat right top;
+}
+
+#dzs .zpL #pcontent {
+    margin: 59px 0px 0px 11px;
+    width: 640px;
+    min-height: 230px;
+    text-align: right;
+}
+
+#dzs .zpL .flytomoon {
+    position: fixed;
+    z-index: 999999999;
+    margin: 0px 42px 0px 0px !important;
+}
+
+#dzs .zpR {
+    float: right;
+    width: 185px;
+    position: relative;
+    padding-top: 45px;
+}
+
+#dzs .zpR a {
+    display: block;
+    position: relative;
+    bottom: 0px;
+}
+
+#dzs .zpR a.vor {
+    background: url(../images/zp-vor.png) no-repeat;
+    width: 131px;
+    height: 55px;
+}
+
+#dzs .zpR a.zurueck {
+    background: url(../images/zp-zurueck.png) no-repeat left bottom;
+    width: 113px;
+    height: 91px;
+}
+
+#dzs .zpR table {
+    margin: 11px 0px 20px;
+}
+
+#dzs .zpR p {
+    margin-bottom: 40px;
+}
+
+#dzs .zpR table td {
+    width: 50%;
+    color: #6A6A6A;
+    font-size: 11px;
+    padding: 5px 5px;
+}
+
+#dzs .zpR h3 {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 2px 0px 1px;
+    overflow: hidden;
+    width: 185px;
+} 
+
+#dzs .zpR .bschr {
+    font-style: italic;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+#dzs .zpR button {
+    margin-bottom: 5px;
+    display: block;
+}
+
+#dzs h2 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+#dzs .short {
+    margin-top: 14px;
+    clear: both;
+}
+
+#dzs .short p {
+    line-height: 1.5;
+}
+
+#dzs .short span {
+    display: block;
+    margin-top: 18px;
+    font-size: 10px;
+}
+
+#dzs .laden {
+    margin-top: 9px;
+    padding-top: 9px;
+    border-top: 1px dotted #aaa;
+}
+
+#dzs .laden span {
+    display: block;
+    margin-bottom: 9px;
+    font-size: 11px;
+}
+
+#dzs .laden span a {
+    font-size: 10px;
+}
+
+#dzs .laden .erfolg {
+    border: 1px solid #81c17c;
+    background: #e9fae8;
+    padding: 8px 10px;
+    margin: 10px 0px 0px;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+#dzs .historie {
+    margin-top: 60px;
+    padding-top: 12px;
+    border-top: 1px dotted #aaa;
+}
+
+#dzs .historie table {
+    width: 100%;
+}
+    
+#dzs .historie td {
+    padding: 7px 15px 7px 4px;
+}
+    
+#dzs .historie td.last {
+    padding-right: 4px;
+    text-align: right;
+}
+
+#dzs .historie tr.bg_2 td {
+    background: #eee;
+}
+
+#dzs .historie tr.aktiv td {
+    color: #aaa;
+}
+
+#dzs .historie tr.aktiv td a {
+    color: #aaa;
+    cursor: text;
+    text-decoration: none;
+}
+
+
+
+ul.upload_info {
+    font-size: 11px;
+    overflow: hidden;
+    padding: 12px 5px;
+    display: block;
+    text-align: center;
+    background: #fff;
+    margin-top: 20px;
+}
+
+ul.upload_info li {
+    font-weight: normal;
+    margin: 0px 30px;
+    display: inline-block;
+    color: #777;
+}
+
+
+
+#modal-gallery {
+    display: none;
+}
+
+#fileupload {
+    font-size: 12px;
+}
+
+#fileupload table {
+    border-spacing: 10px 0px;
+    width: 100%;
+}
+
+#fileupload table td {
+    background: #fff;
+    padding: 10px 15px;
+    vertical-align: middle;
+    border-bottom: 4px solid #f4f4f4;
+    font-size: 11px;
+}
+
+#fileupload table tr:first-child td {
+    border-top: 14px solid #f4f4f4;
+}
+
+#fileupload table td.preview {
+    padding: 3px 0px 3px 3px;
+    width: 80px;
+    height: 60px;
+    background: #fff url(../images/loading_white.gif) no-repeat center center;
+}
+
+#fileupload table td.preview.loaded {
+    background: #fff;
+}
+
+#fileupload table tr.has_error td {
+    background: #fffbee;
+}
+
+#fileupload table tr.has_error td.preview {
+    background: #fffbee url(../images/warning.png) no-repeat center center;
+}
+
+#fileupload table td.preview span {
+    display: block;
+    height: 60px;
+    width: 80px;
+}
+    
+
+#fileupload table td.preview img {
+    line-height: 1;
+    display: block;
+    border-radius: 2px;
+}
+
+#fileupload table td.name {
+    font-weight: bold;
+    color: #777;
+    min-width: 280px;
+    font-size: 12px;
+}
+
+#fileupload table td.name em {
+    font-style: normal;
+    color: #66cc33;
+}
+
+#fileupload table td.size {
+    text-align: right;
+}
+
+#fileupload table td.edit {
+    text-align: right;
+}
+
+#fileupload table td.edit a {
+    display: none;
+}
+
+#fileupload.is_files table td.edit {
+    display: none !important;
+    width: 0px;
+}
+
+#fileupload table td div.ui-progressbar {
+    height: 19px;
+    overflow: hidden;
+}
+
+#fileupload table td div.upload-successed {
+    display: none;
+    min-width: 202px;
+    text-align: center;
+}
+
+#fileupload table td.error {
+    min-width: 202px;
+    text-align: right;
+}
+
+#fileupload .rbutton {
+    display: none;
+}
+
+#fileupload span.fileinput-button {
+    display: inline-block;
+    margin-bottom: 0px;
+    float: none;
+    font-size: 14px;
+}
+
+#fileupload div.fileupload-progress {
+    padding: 12px;
+    text-align: center;
+    background: #fff;
+    margin-top: 14px;
+    color: #888;
+    font-size: 11px;
+    display: none;
+}
+
+#fileupload div.fileupload-progress h2 {
+    padding: 3px 0px 15px;
+}
+
+#fileupload div.fileupload-progress .upload_dir {
+    padding-bottom: 13px;
+}
+
+#fileupload div.fileupload-progress .progress-extended {
+    padding-bottom: 15px;
+}
+
+#fileupload div.fileupload-progress .progress-extended span {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+#fileupload div.fileupload-progress .progress-extended strong {
+    font-weight: normal;
+    color: #555;
+}
+
+#fileupload div.fileupload-progress div.ui-progressbar {
+    height: 10px;
+    width: 490px;
+    margin: 0 auto;
+    overflow: hidden;
+}

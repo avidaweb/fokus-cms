@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /fokus/
+Disallow: /inc/
+Disallow: /content/
+Allow: /

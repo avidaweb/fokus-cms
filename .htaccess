@@ -1,0 +1,65 @@
+# START FKS
+RewriteEngine on
+RewriteBase /Seiten/fokus/
+
+RewriteCond %{REQUEST_URI} ^/[^\.]+[^/]$
+RewriteRule ^(.*)$ http://%{HTTP_HOST}/$1/ [R=301,L]
+
+RewriteRule ^test-mod-rewrite/$ inc/test.php
+
+RewriteRule ^([a-z]{2})/$ index.php?lan=$1
+
+RewriteRule ^([a-z]{2})/([0-9]+)/([0-9]+)/([^/]+)/([0-9]+)/$ index.php?lan=$1&id=$2&dk=$3&titel=$4&seite=$5
+RewriteRule ^([a-z]{2})/([0-9]+)/([0-9]+)/([^/]+)/$ index.php?lan=$1&id=$2&dk=$3&titel=$4
+
+RewriteRule ^([a-z]{2})/([0-9]+)/([^/]+)/([0-9]+)/$ index.php?lan=$1&id=$2&titel=$3&seite=$4
+RewriteRule ^([a-z]{2})/([0-9]+)/([^/]+)/$ index.php?lan=$1&id=$2&titel=$3
+
+
+RewriteRule ^([0-9]+)/([0-9]+)/([^/]+)/([0-9]+)/$ index.php?id=$1&dk=$2&titel=$3&seite=$4
+RewriteRule ^([0-9]+)/([0-9]+)/([^/]+)/$ index.php?id=$1&dk=$2&titel=$3
+
+RewriteRule ^([0-9]+)/([^/]+)/([0-9]+)/$ index.php?id=$1&titel=$2&seite=$3
+RewriteRule ^([0-9]+)/([^/]+)/$ index.php?id=$1&titel=$2
+
+
+RewriteRule ^([a-z]{2})/c/([^/]+)/$ index.php?lan=$1&cp=$2
+RewriteRule ^([a-z]{2})/c/([^/]+)/([^/]+)/$ index.php?lan=$1&cp=$2&cp_vars=$3
+RewriteRule ^c/([^/]+)/$ index.php?cp=$1
+RewriteRule ^c/([^/]+)/([^/]+)/$ index.php?cp=$1&cp_vars=$2
+
+RewriteRule ^([a-z]{2})/q/([^/]+)/$ index.php?lan=$1&fks_q=$2
+RewriteRule ^q/([^/]+)/$ index.php?fks_q=$1
+
+RewriteRule ^ajax/([^/]+)/$ inc/ajax.php?action=$1
+
+RewriteRule ^static/([a-z]+)/([^/]+)/$ inc/static.php?type=$1&files=$2
+
+RewriteRule ^feed/([0-9]+)/([^/]+)/$ inc/feed.php?id=$1&titel=$2
+
+RewriteRule ^activate/([^/]+)/([^/]+)/$ index.php?fid=$1&acode=$2
+
+RewriteRule ^img/([0-9]+).([0-9]+).([0-9]+).([^/]+)$ inc/img.php?id=$1&w=$2&h=$3&s=$4&titel=$5
+RewriteRule ^files/([0-9]+)/([^/]+)$ inc/download.php?id=$1
+
+RewriteRule ^sitemap.xml$ inc/sitemap.php
+RewriteRule ^([a-z]{2})/sitemap.xml$ inc/sitemap.php?lan=$1
+
+RewriteRule ^robots.txt$ inc/robots.txt
+
+
+RewriteRule ^error/([0-9]+)/$ index.php?error=$1
+ErrorDocument 403 http://localhost/Seiten/fokus/error/403/
+ErrorDocument 404 http://localhost/Seiten/fokus/error/404/
+ErrorDocument 500 http://localhost/Seiten/fokus/error/500/
+ErrorDocument 503 http://localhost/Seiten/fokus/error/503/
+
+
+<Files fokus-config.php>
+    Order Deny,Allow
+    Deny from all
+</Files>
+
+AddDefaultCharset utf-8
+# END FKS
+

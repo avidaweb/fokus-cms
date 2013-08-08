@@ -1,0 +1,3 @@
+<?php
+// fokus-cms.de
+?>

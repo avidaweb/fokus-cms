@@ -1,0 +1,752 @@
+#per_auswahl li {
+    cursor: pointer;
+    font-size: 14px;
+    display: block;
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding: 15px 0px 15px;
+    font-weight: bold;
+}
+
+#personen {
+    padding:16px 0px 12px;
+    color: #6B6B6B;
+    font-size: 12px;
+}
+
+#personen .kopf {
+    margin-bottom: 16px;
+    overflow: auto;
+    border-bottom:1px dotted #9D9D9D;
+    padding-bottom: 15px;
+}
+
+#personen .kopfL {
+    float: left;
+}
+
+#personen .kopfR {
+    float: right;
+}
+
+#personen .kopf .kopfR input {
+    width: 208px;
+    padding: 2px 8px;
+    margin-left: 7px;
+}
+
+#personen .menue {
+    overflow: auto;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#personen .menue .li {
+    float: left;
+    margin-right: 20px;
+    width: 230px;
+    font-size: 11px;
+}
+
+#personen .opt {
+    padding: 10px 5px 10px 12px;
+    display: none;
+    background: #fff;
+    margin-top: 6px;
+    border: 1px solid #E9E9E9;
+}
+
+#personen .opt table {
+    margin: 10px 0px 0px;
+}
+
+#personen .opt table td {
+    padding: 1px 9px 1px 0px;
+    vertical-align: middle;
+}
+
+#personen table#pers_auflistung {
+    width: 100%;
+}
+
+#personen table#pers_auflistung a, #personen table#pers_auflistung span {
+    cursor: pointer;
+}
+
+#personen table#pers_auflistung td span:hover {
+    text-decoration: underline;
+}
+
+#personen table#pers_auflistung tr#headline th {
+    text-align: center;
+    font-weight: normal;
+    color: #444;
+    padding: 16px 14px;
+    background: #ececec;
+    border: 1px dotted #d3d3d3;
+    border-top: 1px dotted #afafaf;
+    border-bottom: 1px dotted #afafaf;
+    vertical-align: middle;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#personen table#pers_auflistung tr#headline th.sort {
+    background: #fff;
+}
+
+#personen table#pers_auflistung tr#headline th.asc {
+    background: #fff url(../images/sort_asc.png) no-repeat center 7px;
+}
+
+#personen table#pers_auflistung tr#headline th.desc {
+    background: #fff url(../images/sort_desc.png) no-repeat center 7px;
+}
+
+#personen table#pers_auflistung td {
+    padding: 7px 8px;
+    border: 1px dotted #d3d3d3;
+    line-height: 1.25;
+}
+
+#personen table#pers_auflistung tr td:first-child {
+    padding-left: 5px;
+    width: 50px;
+}
+
+#personen table#pers_auflistung tr.bg_1 td {
+    background: #F4F4F4;
+}
+
+#personen table#pers_auflistung tr.bg_2 td {
+    background: #ECECEC;
+}
+
+#personen table#pers_auflistung tr:hover td {
+    background: #fff;
+}
+
+#personen table#pers_auflistung em.wird_bearbeitet {
+    display: block;
+    background: url(../images/icon_wirdbearbeitet.png) no-repeat 0px 0px;
+    padding: 0px 0px 0px 17px;
+}
+
+#personen table#pers_auflistung td.nothing_found {
+    text-align: center;
+    font-size: 30px;
+    padding: 18px 0px;
+    color: #ccc;
+    background: #fff;
+}
+
+#personen table#pers_auflistung td.more_results {
+    font-size: 14px;
+    padding: 8px 0px;
+    background: #fff;
+}
+
+#personen table#pers_auflistung td.more_results a {
+    display: block;
+    padding: 7px 10px;
+}
+
+#personen table#pers_auflistung td.loading {
+    text-align: center;
+    padding: 18px 0px;
+    background: #fff;
+}
+
+
+
+#per_edit table {
+    width: 100%;
+    margin: 13px 0px 0px;
+    border-bottom: 1px dotted #9F9F9F;
+}
+
+#per_edit table:last-child {
+    border: 0px;
+}
+
+#per_edit td {
+    padding: 0px 20px 12px;
+    vertical-align: top;
+}
+
+#per_edit td input, #per_edit td select, #per_edit td textarea {
+    width: 440px;
+    margin: 0px 0px 0px 2px;
+}
+
+#per_edit td.ftd {
+    width: 130px;
+    text-align: left;
+    padding-left: 0px;
+    font-size: 12px;
+}
+
+#per_edit table table{
+    width: 100%;
+    margin: 0px;
+    border:0px
+}
+
+#per_edit table table td {
+    padding: 0px 20px 12px 0px;
+    vertical-align: middle;
+}
+
+#per_edit table table.zeitraum {
+    width: auto;
+    margin: 20px 0px 0px;
+}
+
+#per_edit table table.zeitraum td {
+    padding: 0px 3px 10px;
+}
+
+#per_edit table table.zeitraum select.zeit {
+    width: 50px;
+}
+
+#per_edit table table.zeitraum img {
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#per_edit table table.zeitraum td.notaktiv {
+    color:#bbb;
+}
+
+#per_edit table table.zeitraum input.datepicker {
+    width: 90px;
+    margin-right: 4px;
+}
+
+#per_edit .llinie {
+    height: 1px;
+    border-top: 1px dotted #aaa;
+    margin: 15px 0px;
+}
+
+#per_edit .bgruppen {
+    width: auto;
+}
+
+#per_edit .new_pw {
+    padding: 10px 0px 0px 24px;
+    display: none;
+}
+
+#per_edit .new_pw_klar {
+    padding-top: 7px;
+}
+
+#per_edit .new_pw input {
+    width: 100%;
+}
+
+#per_edit .rollen {
+    border: 1px solid #ccc;
+    margin-bottom: 9px;
+    padding: 3px 6px;
+    background: #fff;
+}
+
+#per_edit .rollen table {
+    width: 100%;
+}
+
+#per_edit .rollen td {
+    padding: 6px 10px;
+    border-bottom: 1px dotted #ccc;
+    font-size: 11px;
+}
+
+#per_edit .rollen tr.last td {
+    border: 0px;
+}
+
+#per_edit .rollen td strong {
+    color: #555;
+    font-size: 12px;
+}
+
+#per_edit #del_user {
+    display: none;
+    padding-top: 9px;
+}
+
+#per_edit .goright {
+    text-align: right;
+    min-width: 230px;
+}
+
+#per_edit img.avatar.hidden {
+    display: none;
+}
+
+#fn570 td span {
+    display: inline-block;
+    padding: 0px 5px 0px 4px;
+}
+
+
+#rollenuebersicht {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+#rollenuebersicht h2 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 4px;
+    font-weight: normal;
+}
+
+#rollenuebersicht .emailbe {
+    margin-bottom: 25px;
+}
+
+#rollenuebersicht .rollen {
+    border: 1px solid #bbb;
+    padding: 5px 12px;
+    background: #fff;
+}
+
+#rollenuebersicht .rollen table {
+    width: 100%;
+}
+
+#rollenuebersicht .rollen td {
+    padding: 4px 5px 4px;
+    border-bottom: 1px dotted #ccc;
+    font-size: 11px;
+}
+
+#rollenuebersicht .rollen td.ezeilig {
+    width: 60px;
+    text-align: right;
+}
+
+#rollenuebersicht .rollen td.schieber {
+    width: 35px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+#rollenuebersicht .rollen td.schieber img {
+    cursor: move;
+}
+
+#rollenuebersicht .rollen td.fir {
+    width: 140px;
+}
+
+#rollenuebersicht .rollen td.desc {
+}
+
+#rollenuebersicht .rollen tr:last-child td {
+    border: 0px;
+}
+
+#rollenuebersicht .rollen td strong {
+    color: #555;
+    font-size: 12px;
+}
+
+#rollenuebersicht #neubutton {
+    overflow: auto;
+    margin-top: 6px;
+}
+
+#rollenuebersicht #neubutton button {
+    float:right;
+}
+
+
+
+#rolle_edit {
+    font-size: 12px;
+}
+
+#rolle_edit .clear {
+    clear: both;
+}
+
+#rolle_edit h3 {
+    font-size: 22px;
+    color: #666;
+    display: block;
+    float: left;
+    width: 170px;
+    clear: both;
+    font-weight: normal;
+    padding-top: 3px;
+    text-align: left;
+}
+
+#rolle_edit h3 span {
+    display: block;
+    font-size: 19px;
+    color: #999;
+    padding-top: 6px;
+}
+
+#rolle_edit .area {
+    width: 670px;
+    background: #fff;
+    margin: 0px 0px 18px;
+    border: 1px solid #eee;
+    float: right;
+    overflow: auto;
+    padding: 8px 15px;
+    line-height: 1.3;
+}
+
+#rolle_edit .area.last_area {
+    margin-bottom: 30px;
+}
+
+#rolle_edit .area h2 {
+    float: left;
+    width: 175px;
+    color: #666;
+    padding: 0px;
+    font-size: 19px;
+}
+
+#rolle_edit .area article {
+    float: right;
+    padding: 3px 0px 0px;
+    width: 480px;
+    color: #444;
+}
+
+#rolle_edit .area article.disabled {
+    color: #aaa;
+}
+
+#rolle_edit .area h4 {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0px 0px 2px;
+}
+
+#rolle_edit .area p.trenner {
+    padding-top: 16px;
+}
+
+#rolle_edit .area input.titel {
+    width: 350px;
+}
+
+#rolle_edit .area input.beschr {
+    width: 650px;
+}
+
+#rolle_edit .area .not_active {
+    color: #bbb;
+}
+
+#rolle_edit .area article p {
+    padding: 2px 0px;
+}
+
+#rolle_edit .area article input {
+    margin-right: 5px;
+}
+
+#rolle_edit .area article label {
+    padding-top: 2px;
+}
+
+#rolle_edit .area article div.mopt {
+    margin: 9px 0px;
+    padding: 8px 0px;
+    border-top: 1px dotted #bdbdbd;
+    border-bottom: 1px dotted #bdbdbd;
+}
+
+#rolle_edit .area article div.moptnb {
+    padding-bottom: 0px;
+    border-bottom: 0px;
+}
+
+#rolle_edit .area article div.mopt .more {
+    padding: 10px 0px 5px 20px;
+    display: none;
+}
+
+#rolle_edit .area article div.mopt .more span.desc {
+    padding: 2px 0px 6px;
+    display: block;
+}
+
+#rolle_edit .area article div.mopt .more .template {
+    padding: 14px 0px;
+}
+
+#rolle_edit .area article div.mopt .more .template h4 span {
+    color: #999;
+}
+
+#rolle_edit .area article div.mopt .more .template .more {
+    padding-top: 0px;
+    clear: both;
+}
+
+#rolle_edit .area article div.mopt .more .template .temp {
+    padding: 13px 0px 0px;
+    clear: both;
+}
+
+#rolle_edit .area article div.mopt .more .td {
+    clear: both;
+}
+
+#rolle_edit .area article div.mopt .more .td .tdn {
+    float: left;
+}
+
+#rolle_edit .area article div.mopt .more .tda {
+    float: right;
+    font-size: 11px;
+}
+
+#rolle_edit .area article div.mopt .more .tda label {
+    padding-top: 0px;
+}
+
+
+#firmen {
+    padding:16px 0px 12px;
+    color: #6B6B6B;
+    font-size: 12px;
+}
+
+#firmen .kopf {
+    margin-bottom: 16px;
+    overflow: auto;
+    border-bottom:1px dotted #9D9D9D;
+    padding-bottom: 15px;
+}
+
+#firmen .kopf h2 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+#firmen .menue {
+    overflow: auto;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#firmen .menue .li {
+    float: left;
+    width: 50%;
+}
+
+#firmen a.more_opt {
+    display: inline-block;
+    padding: 5px 4px 5px 16px;
+    background: #fff url(../images/rpfeil_unten.png) no-repeat 2px center;
+}
+
+#firmen .opt {
+    padding-left: 20px;
+    margin-top: 15px;
+    display: none;
+}
+
+#firmen .opt table {
+    margin: 10px 0px 0px;
+}
+
+#firmen .opt table td {
+    padding: 1px 9px 1px 0px;
+    vertical-align: middle;
+}
+
+#firmen .menue .re {
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+
+#firmen .menue .re input {
+    width: 210px;
+    padding: 2px 8px;
+    margin-left: 7px;
+}
+
+#firmen .menue .re p {
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    border-bottom:1px dotted #9D9D9D;
+}
+
+#firmen table#firmen_auflistung {
+    width: 100%;
+}
+
+#firmen table#firmen_auflistung a, #firmen table#firmen_auflistung span {
+    cursor: pointer;
+}
+
+#firmen table#firmen_auflistung span:hover {
+    text-decoration: underline;
+}
+
+#firmen table#firmen_auflistung td {
+    border-bottom:1px dotted #9D9D9D;
+    padding: 8px 15px 8px 0px;
+}
+
+#firmen table#firmen_auflistung tr#headline td {
+    font-weight: bold;
+    color: #555;
+    cursor: pointer;
+}
+
+#firmen table#firmen_auflistung td.last {
+    padding-right: 0px; 
+    text-align: right;
+}
+
+
+
+#firma_edit table {
+    width: 100%;
+    margin: 13px 0px 0px;
+    border-bottom: 1px dotted #9F9F9F;
+}
+
+#firma_edit table:last-child {
+    border: 0px;
+}
+
+#firma_edit td {
+    padding: 0px 20px 12px;
+    vertical-align: top;
+}
+
+#firma_edit td input, #firma_edit td select, #firma_edit td textarea {
+    width: 440px;
+    margin: 0px 0px 0px 2px;
+}
+
+#firma_edit td.ftd {
+    width: 130px;
+    text-align: left;
+    padding-left: 0px;
+    font-size: 12px;
+}
+
+#firma_edit table table{
+    width: 100%;
+    margin: 0px;
+    border:0px
+}
+
+#firma_edit table table td {
+    padding: 0px 20px 12px 0px;
+    vertical-align: middle;
+}
+
+
+
+
+
+.dok_zuordnung {
+    padding: 18px 20px 0px;
+    background: #666;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #333;
+    margin-top: 6px;
+    line-height: 1.0;
+}
+
+.dok_zuordnung button {
+    margin:13px 0px;
+}
+
+.dok_zuordnung .struk_dok {
+    height: 22px;
+    background: #767676;
+    overflow: visible;
+    width: 100%;
+    margin-bottom: 1px;
+    cursor: move;
+}
+
+.dok_zuordnung .struk_dok span {
+    display: block;
+    background: #fff;
+    float: left;
+    width: 392px;
+    padding: 5px 10px;
+}
+
+.dok_zuordnung .dokumentenklasse span {
+    background: #ccc;
+}
+
+.dok_zuordnung .struk_dok .options {
+    background: #fff url("../images/rpfeil_unten.png") no-repeat center center;
+    float: right;
+    width: 25px;
+    height: 22px;
+    cursor: pointer;
+    position: relative;
+    overflow: visible;
+}
+
+.dok_zuordnung .struk_dok .options .add {
+    display: block;
+    position: absolute;
+    display: none;
+    top: 0px;
+    right: 0px;
+    border: 1px solid #666;
+    width: 250px;
+    padding: 2px 12px;
+    background: #fff;
+    border-radius: 6px;
+    moz-border-radius: 6px;
+    webkit-border-radius: 6px;
+    border-top-right-radius: 0px;
+    -moz-border-radius-topright: 0px;
+    -webkit-border-top-right-radius: 0px;
+    z-index: 9999999;
+}
+
+.dok_zuordnung .struk_dok .options .add a {
+    display: block;
+    margin: 6px 0px;
+}
+
+
+#fn590 .inhalt p {
+    background: #fff;
+    font-size: 12px;
+    line-height: 1.6;
+    padding: 6px 12px;
+}
+
+#fn590 .inhalt p.linkz {
+    margin: 12px 0px 0px;
+}
+
+#fn590 .inhalt p.linkz a {
+    display: block;
+    margin: 4px 0px;
+    font-size: 11px;
+}

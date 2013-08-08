@@ -1,0 +1,96 @@
+#fks_foresight {
+    height: 36px;
+    background: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    width: 100%;
+    z-index: 99999999;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    font-size: 11px;
+    font-family: Arial, sans-serif;
+    color: #555;
+    line-height: 1;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+#fks_foresight .fks_wrapper {
+    margin: 0 auto;
+    width: 940px;
+    height: 32px;
+    overflow: hidden;
+}
+
+#fks_foresight .fks_left {
+    float: left;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+#fks_foresight .fks_right {
+    float: right;
+}
+
+#fks_foresight input, #fks_foresight select {
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: #fff;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    display: inline-block;
+    padding: 2px 4px;
+    margin: 0px;
+    line-height: 1;
+}
+
+#fks_foresight input.submit {
+    cursor: pointer;
+    border: 0px;
+    display: inline-block;
+    padding: 3px 4px;
+    background: #fff;
+    color: #3d45b1;
+    margin: 0px 0px 0px 10px;
+    font-weight: normal;
+    line-height: 1;
+}
+
+#fks_foresight .fks_datumO {
+    overflow: auto;
+    display: block;
+    float: right;
+    margin-top: 5px;
+}
+
+#fks_foresight .fks_rest {
+    overflow: auto;
+    display: block;
+    float: right;
+    margin-top: 4px;
+}
+
+#fks_foresight .fks_datum {
+    width: 80px;
+    float: left;
+}
+
+#fks_foresight img {
+    padding: 0px 0px 0px 5px;
+    float: right;
+}
+
+#fks_foresight .fks_A {
+    padding: 0px 10px 0px 0px;
+}
+
+#fks_foresight .fks_B {
+    padding: 0px 10px 0px 15px;
+}
+
+#fks_foresight .fks_C {
+    padding: 0px 15px 0px 6px;
+}

@@ -1,0 +1,31 @@
+<?php
+$translation = array(
+    'BE' => 'Belgisch',
+    'BR' => 'Brasilianisch',
+    'BG' => 'Bulgarisch',
+    'CA' => 'Kanadisch',
+    'CN' => 'Chinesisch',
+    'CO' => 'Kolumbianisch',
+    'CZ' => 'Tschechisch',
+    'EG' => 'Ägyptisch',
+    'EN' => 'Englisch',
+    'FR' => 'Französisch',
+    'DE' => 'Deutsch',
+    'GR' => 'Griechisch',
+    'HU' => 'Ungarisch',
+    'IN' => 'Indisch',
+    'IT' => 'Italienisch',
+    'JP' => 'Japanisch',
+    'NL' => 'Niederländisch',
+    'NO' => 'Norwegisch',
+    'PL' => 'Polnisch',
+    'PT' => 'Portugiesisch',
+    'RU' => 'Russisch',
+    'ES' => 'Spanisch',
+    'SE' => 'Schwedisch',
+    'CH' => 'Schweizerisch',
+    'TR' => 'Türkisch',
+    'UA' => 'Ukrainisch',
+    'US' => 'Amerikanisches Englisch'
+);
+?>

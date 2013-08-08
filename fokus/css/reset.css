@@ -1,0 +1,117 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+hr {
+    height: 0px;
+    border-bottom: 1px solid #CFCFCF;
+}
+
+input[type=checkbox], input[type=radio] {
+    width: auto !important;
+}
+
+/*////////////////////////////////////// */
+
+fieldset {
+    border:1px solid #CFCFCF;
+    padding:13px 12px;
+    margin-bottom: 23px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+fieldset hr {
+    border-color: #CFCFCF;
+    background: #CFCFCF;
+    margin:10px 0px;
+}
+
+legend {
+    font-weight: bold;
+    color:#525252;
+}
+
+.dropdown {
+    font-size: 11px;
+    margin: 4px 0px 16px;
+}
+
+.dropdown span {
+    display: block;
+    padding: 0px 0px 6px 20px;
+    cursor: pointer;
+}
+
+.dropdown span.foben {
+    background: url(../images/rpfeil_oben.png) no-repeat 0px 1px;
+}
+
+.dropdown span.funten {
+    background: url(../images/rpfeil_unten.png) no-repeat 0px 0px;
+}
+
+.dropdown p {
+    overflow: auto;
+    padding: 0px 0px 0px 20px;
+}
+
+.dropdown p input {
+    float: left;
+    margin-right: 12px;
+}
+
+.dropdown p label {
+    float: left;
+    display: block;
+}
+
+
+.dropdown2 {
+    font-size: 11px;
+}
