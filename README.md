@@ -16,6 +16,6 @@ We know that the source code of fokus has room for approvements in terms of eleg
 
 
 Installation
-____________
+------------
 
-[http://www.fokus-cms.de/69/fokus-installieren/](http://www.fokus-cms.de/69/fokus-installieren/) *(german language)*
+Tutorial: [http://www.fokus-cms.de/69/fokus-installieren/](http://www.fokus-cms.de/69/fokus-installieren/) *(German language)*
