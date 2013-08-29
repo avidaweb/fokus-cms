@@ -13,3 +13,9 @@ fokus is a small but sexy open source cms developed in Germany which concentrate
 The way fokus works offers some special features. The main goal is to keep the website coding and administration as simple and clever as possible.
 
 We know that the source code of fokus has room for approvements in terms of elegance and stability. Currently we are working with high priorities to improve that. Of course we're happy about every helping hand who would like to help on our project.
+
+
+Installation
+____________
+
+[http://www.fokus-cms.de/69/fokus-installieren/](http://www.fokus-cms.de/69/fokus-installieren/) *(german language)*
