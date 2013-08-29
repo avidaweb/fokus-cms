@@ -5,8 +5,8 @@ define('INSTALLED', true);
 define('DEBUG', true);
 
 $dbserver =	'localhost';
-$dbuser = 'root';
-$dbpw =	'schmalge95';
+$dbuser = '';
+$dbpw =	'';
 $db = 'fokus';
 
 $domain = 'http://localhost/Seiten/fokus'; 
