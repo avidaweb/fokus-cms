@@ -530,6 +530,8 @@ class Block_64 extends BlockBasic
                 $kids[$kid->id] = $kid;    
             }    
         }
+
+        $kids = self::$api->execute_filter('teaser_elements', $kids, array());
         
         return $kids;
     }
@@ -579,6 +581,8 @@ class Block_64 extends BlockBasic
         
         if($d_id)
             return $docs[$d_id];
+
+        $docs = self::$api->execute_filter('teaser_documents', $docs, array());
         
         return $docs;
     }
@@ -621,6 +625,8 @@ class Block_64 extends BlockBasic
             $pagination .= ($p != $this->pages - 1?' <a class="page_after" href="'.self::$fks->getPageAfterURL().'" rel="next">&raquo;</a> ':'').'
             '.($p != $this->pages - 1?' <a class="last_page" href="'.self::$fks->getPageURL(($this->pages - 1)).'" rel="next">'.self::$trans->__('Letzte Seite').'</a> ':'').'
         </div>';
+
+        $pagination = self::$api->execute_filter('teaser_pagination', $pagination, $this->getPagingData());
         
         return $pagination;
     }

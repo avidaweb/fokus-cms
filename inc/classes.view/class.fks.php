@@ -190,6 +190,8 @@ class Page
         $this->element->slots = self::$base->db_to_array($this->element->slots);
         if(!is_array($this->element->slots))
             $this->element->slots = array();
+
+        self::$api->execute_hook('init_element', self::$static, true);
     }
     
     private function initHomeElement()
@@ -319,6 +321,9 @@ class Page
                 { 
                     if(!Strings::strExists('//www.', self::$api->getDomain(), false))
                     {
+                        $pre = '';
+                        $end = '';
+
                         if(Strings::strExists('http://', self::$api->getDomain()))
                         {
                             $pre = 'http://';
