@@ -4,6 +4,12 @@ define('UPDATE_ALLOWED', true);
 
 require_once('../inc/header.php');
 
+$error = array();
+$multi_user = false;
+$name = '';
+$mname = '';
+$namen = array();
+
 if($_REQUEST['logout'])
 {    
     $user->doLogout();
@@ -21,7 +27,7 @@ if($_POST['login'])
     
     $name = $fksdb->save($_POST['name']);
     $mname = $fksdb->save($_POST['mname']);
-    $pw2 = $fksdb->save($_POST['pw']); 
+    $pw2 = $fksdb->save($_POST['pw']);
     
     if(!$mname)
     {
@@ -71,7 +77,7 @@ if($_POST['login'])
     }
     else 
     {
-        if($base->getOpt()->login_captcha)
+        if($base->getOpt('login_captcha'))
         {       
             $captcha = $fksdb->save($_POST['captcha'], 1);
             
@@ -100,11 +106,7 @@ if($_POST['login'])
         if(!$name && !$multi_user)
             $error[] = $trans->__('Benutzername muss eingegeben werden');  
         if(!$pw2)
-            $error[] = $trans->__('Passwort muss eingegeben werden'); 
-            
-        $user_online = $fksdb->count($fksdb->query("SELECT id FROM ".SQLPRE."users WHERE status = '0' AND papierkorb = '0' AND online >= '".($base->getTime() - 30)."' AND (type = '0' OR type = '2')"));
-        if($user_online >= $suite->getLimitOfUsers() && $suite->getLimitOfUsers() != -1)
-            $error[] = $trans->__('Maximale Anzahl an Mitarbeitern angemeldet').' ('.$user_online.')'; 
+            $error[] = $trans->__('Passwort muss eingegeben werden');
         
         
         $user_query = $fksdb->query("SELECT login, pw, id, von, bis, status, vorname FROM ".SQLPRE."users WHERE (type = '0' OR type = '2') AND papierkorb = '0' AND login = '".$login."' AND login != '' AND pw != '' AND pw != '".md5('')."' LIMIT 1");

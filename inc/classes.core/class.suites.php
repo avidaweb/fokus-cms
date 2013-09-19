@@ -138,39 +138,17 @@ class Suite
     
     public function rm($modul, $need = 1)
     {
-        if(!FOKUSKEY || FKS_OPEN)
-            return 1;
-        
-        $mykey = $this->the_key;
-        return ($mykey->modul[$modul] >= $need?$mykey->modul[$modul]:0);
+        return 1;
     }
     
     public function getLimitOfLanguages()
     {
-        $m2lan = array(
-            0 => 3,
-            1 => 3,
-            2 => 10,
-            3 => -1,
-            4 => -1,
-            5 => -1
-        );
-        
-        return intval($m2lan[$this->rm(3)]);
+        return -1;
     }
     
     public function getLimitOfUsers()
     {
-        $m2us = array(
-            0 => 3,
-            1 => 3,
-            2 => 10,
-            3 => -1,
-            4 => -1,
-            5 => -1
-        );
-        
-        return intval($m2us[$this->rm(9)]);
+        return -1;
     }
 }
 ?>
