@@ -1,4 +1,7 @@
 <?php
+if(!defined('DEPENDENCE'))
+    exit('class is dependent');
+
 if(($index != 'n530' && $index != 'n535'))
     exit($user->noRights());
 

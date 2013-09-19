@@ -79,10 +79,83 @@ if($("#fs510")[0] && lastindex == 's510'){
     $(fs510).find("a#n535").off().on("click", function(){
         neu($(this));
     });
+
+    // avatar start
+    var sbutton = $(fs510).find("button.avatar_select");
+    if($(sbutton)[0]){
+        $(sbutton).off().on("click", function(e){
+            e.preventDefault();
+
+            startImageSelect({
+                blackscreen: '',
+                selected: function(file){
+                    if(!file)
+                        return false;
+
+                    $(fs510).find("input[name=avatar]").val(file.id);
+
+                    $(fs510).find("img.avatar").attr("src", file.thumb100h).removeClass("hidden");
+                    $(fs510).find("button.avatar_edit").show().data('file', file.id);
+
+                    $(fs510).find("div.box_save").show();
+                }
+            });
+        });
+    }
+
+    var nbutton = $(fs510).find("button.avatar_new");
+    if($(nbutton)[0]){
+        $(nbutton).off().on("click", function(e){
+            e.preventDefault();
+
+            startUpload({
+                dir: 0,
+                images: true,
+                blackscreen: '',
+                hide_edit: true,
+                limit: 1,
+                refresh: function(newwp, data){
+                    var file = data[0];
+                    if(!file)
+                        return false;
+
+                    $(fs510).find("input[name=avatar]").val(file.id);
+
+                    $(fs510).find("img.avatar").attr("src", file.thumbnail_url_h100).removeClass("hidden");
+                    $(fs510).find("button.avatar_edit").show().data('file', file.id);
+
+                    $(newwp).find("p.close").trigger("click");
+
+                    $(fs510).find("div.box_save").show();
+                }
+            });
+        });
+    }
+
+    var ebutton = $(fs510).find("button.avatar_edit");
+    if($(ebutton)[0]){
+        $(ebutton).off("click").on("click", function(e){
+            e.preventDefault();
+
+            var the_file = $(this).data('file');
+
+            startImageEdit({
+                blackscreen: '',
+                file: the_file,
+                file_version: 0,
+                callback: function(){
+                    var old_src = $(fs510).find("img.avatar").attr("src")+'?random='+Math.random();
+                    $(fs510).find("img.avatar").attr("src", old_src);
+
+                    $(sb).show();
+                }
+            });
+        });
+    }
+    // avatar finish
     
-    $(fs510).find("input, select, textarea").off("keyup change").on("keyup change", function(){ 
-        if($(sb).css("display") == "none") 
-            $(sb).show("blind", 400);
+    $(fs510).find("input, select, textarea").off("keyup change").on("keyup change", function(){
+        $(fs510).find("div.box_save").show();
     });
     
     $(sb).find("input:last").off().on("click", function(){

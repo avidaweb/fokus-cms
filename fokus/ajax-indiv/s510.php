@@ -1,4 +1,7 @@
 <?php
+if(!defined('DEPENDENCE'))
+    exit('class is dependent');
+
 if($index != 's510' || !$user->isAdmin())
     exit($user->noRights());
     
@@ -38,6 +41,7 @@ echo '
                     <td>'.$trans->__('E-Mail-Adresse').'</td>
                     <td><input type="email" name="email" value="'.$user->data('email').'" /></td>
                 </tr>
+
                 <tr class="pw">
                     <td>'.$trans->__('Passwort').'</td>
                     <td class="b">
@@ -52,6 +56,21 @@ echo '
                                 <input type="checkbox" id="pw_klartext" name="pw_klar" value="1" class="auto" />
                                 <label for="pw_klartext">'.$trans->__('Passwort im Klartext eingeben').'</label>
                             </p>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>'.$trans->__('Benutzer-Avatar:').'</td>
+                    <td>
+                        <input type="hidden" name="avatar" value="'.$user->data('avatar').'" />
+
+                        <button class="avatar_select">Bild auswählen</button>
+                        '.($user->r('dat', 'new')?'<button class="avatar_new">Bild hochladen</button>':'').'
+                        '.($user->r('dat', 'edit')?'<button class="avatar_edit" data-file="'.$user->data('avatar').'"'.(!$user->data('avatar')?' style="display:none;"':'').'>'.$trans->__('Bild bearbeiten').'</button>':'').'
+
+                        <div class="goright">
+                            <img src="'.$api->getImageUrl($user->data('avatar'), 0, 100).'" alt=" " height="100" class="avatar'.(!$user->data('avatar')?' hidden':'').'" />
                         </div>
                     </td>
                 </tr>

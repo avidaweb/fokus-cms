@@ -1,4 +1,7 @@
 <?php
+if(!defined('DEPENDENCE'))
+    exit('class is dependent');
+
 if($index != 's515' || !$user->isAdmin())
     exit($user->noRights());
     
@@ -9,7 +12,8 @@ $fksdb->update("users", array(
     "vorname" => $fa['vorname'],
     "nachname" => $fa['nachname'],
     "namenszusatz" => $fa['namenszusatz'],
-    "email" => $fa['email']
+    "email" => $fa['email'],
+    "avatar" => $fa['avatar']
 ), array(
     "id" => $user->getID()
 ), 1);

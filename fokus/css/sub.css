@@ -94,6 +94,14 @@
     border: 1px solid #ddd;
 }
 
+#persoein img.avatar {
+    margin: 7px;
+}
+
+#persoein img.avatar.hidden {
+    display: none;
+}
+
 
 #workflowo .greybox {
     background: #fff;
