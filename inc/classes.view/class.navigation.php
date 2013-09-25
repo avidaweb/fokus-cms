@@ -70,6 +70,9 @@ class Navigation
 					
 					$el = self::$fksdb->fetch("SELECT id, titel, klasse, url, neues_fenster, sprachen, rollen, rollen_fehler, noseo, element FROM ".SQLPRE."elements WHERE id = '".$intern[1]."' AND struktur = '".$struktur."' AND frei = '1' AND papierkorb = '0' AND (anfang <= '".self::$base->getTime()."' AND (bis = '0' OR bis >= '".self::$base->getTime()."')) LIMIT 1"); 
 					if(!$el) continue;
+
+                    if(!self::$api->execute_filter('filter_menu_element', $el->id))
+                        continue;
 					
 					if(!$dok_intern[2])
 					{
@@ -84,6 +87,9 @@ class Navigation
 						$dQ = self::$fksdb->fetch("SELECT id, sprachenfelder FROM ".SQLPRE."documents WHERE id = '".$dok_intern[2]."' AND papierkorb = '0' LIMIT 1");
 						if(!$dQ) continue;
                         $dsp = self::$base->fixedUnserialize($dQ->sprachenfelder);
+
+                        if(!self::$api->execute_filter('filter_menu_document', $dQ->id))
+                            continue;
 						
 						$href = self::$fks->getDomain().self::$fks->getLanguage(false, '/').$el->id.'/'.$dQ->id.'/'.self::$base->auto_slug($dsp[self::$fks->getLanguage(true)]).'/';
                         
@@ -111,6 +117,11 @@ class Navigation
                     $extra_class .= ' email';    
                 }
 			}
+            else
+            {
+                if(!self::$api->execute_filter('filter_navigation_element', $el->id))
+                    continue;
+            }
 		
 			if($el)
 			{
@@ -204,7 +215,10 @@ class Navigation
     			
     				$dQ = self::$fksdb->query("SELECT id, titel, sprachenfelder FROM ".SQLPRE."documents WHERE klasse = '".$el->klasse."' AND papierkorb = '0' AND timestamp_freigegeben != '0' AND gesperrt = '0' AND (anfang <= '".self::$base->getTime()."' AND (bis = '0' OR bis >= '".self::$base->getTime()."')) ORDER BY timestamp DESC");
     				while($d = self::$fksdb->fetch($dQ))
-    				{ 
+    				{
+                        if(!self::$api->execute_filter('filter_navigation_document', $d->id))
+                            continue;
+
     					$dsp = self::$base->fixedUnserialize($d->sprachenfelder);
                         $real_loop = true;
     		
