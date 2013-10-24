@@ -2263,6 +2263,12 @@ div.doc_inhalt_popup span.b:hover {
     border: 1px solid #bbb;
 }
 
+.text_bild .tbL a.del-link {
+    display: block;
+    font-size: 0.8em;
+    margin-top: 9px;
+}
+
 .text_bild .tbR {
     float: left;
     width: 438px;

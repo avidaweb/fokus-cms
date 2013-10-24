@@ -2114,6 +2114,7 @@ if($("#fn250")[0] && lastindex == 'n250') {
                                         var cb2 = $(inhalt).find("div.choosebild2");
                                         var bild_verlinken = $(inhalt).find("div.bild_verlinken");
                                         var preview_picture = $("#preview_picture");
+                                        var pic_delete = $(inhalt).find("a.del-link");
                                         
                                         $(inhalt).find("#textbild_no").off("click").on("click", function(){
                                             if($(cb).css("display") == "block") 
@@ -2140,6 +2141,22 @@ if($("#fn250")[0] && lastindex == 'n250') {
                                         
                                         $(inhalt).find("#bild_extern").off("change keyup").on("change keyup", function(){
                                             $("#preview_picture").attr("src", $(this).val());
+                                        });
+
+                                        $(pic_delete).off("click").on("click", function(e){
+                                            e.preventDefault();
+
+                                            $(inhalt).find("#ins_bild_id").val(0);
+                                            $(inhalt).find("#ins_bild_titel").html('');
+
+                                            $(inhalt).find("span.bildgr").html('');
+
+                                            $(inhalt).find("#preview_picture").hide().attr("src", "");
+                                            $(inhalt).find("button.edit_current_pic").hide().data('file', 0);
+
+                                            $(pic_delete).hide();
+
+                                            zurfreigabe();
                                         });
                                         
                                         // Bild verlinken
@@ -2182,6 +2199,8 @@ if($("#fn250")[0] && lastindex == 'n250') {
                                             e.preventDefault();
                                             
                                             bildauswahl(this, false);
+
+                                            $(pic_delete).show();
                                         });
                                         
                                         // Neues Bild hochladen   
@@ -2205,6 +2224,8 @@ if($("#fn250")[0] && lastindex == 'n250') {
                                                         
                                                         $(inhalt).find("#ins_bild_id").val(file.id);
                                                         $(inhalt).find("#ins_bild_titel").html(file.name);
+
+                                                        $(pic_delete).show();
                                                         
                                                         var text_bild = $(inhalt).find("div.text_bild");
                                                         

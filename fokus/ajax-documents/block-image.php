@@ -129,10 +129,11 @@ echo '
             Bild anzeigen
         </'.($row->type == 15?'h2':'strong').'>
 
-        <img id="preview_picture"'.(!$row->bild?' style="display:none;"':'').' src="'.($row->bild_extern?$row->bild_extern:$internpic).'" alt="Kein Bild geladen" />
+        <img id="preview_picture"'.(!$row->bild || ($row->bild == 1 && !$internpic)?' style="display:none;"':'').' src="'.($row->bild_extern?$row->bild_extern:$internpic).'" alt="Kein Bild geladen" />
 
         <br />
         <span class="bildgr"></span>
+        <a class="del-link"'.(!$row->bild || ($row->bild == 1 && !$internpic)?' style="display:none;"':'').'>Bildverknüpfung entfernen</a>
     </div>
     <div class="tbR">
         '.($row->type == 15?'
