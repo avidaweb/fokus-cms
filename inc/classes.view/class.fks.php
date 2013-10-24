@@ -557,9 +557,9 @@ class Page
         return $this->area;    
     }
     
-    public function getErrorDocuments($data = 0)
+    public function getErrorDocuments($data = -1)
     {
-        if($data)
+        if($data > -1)
         {
             if(!is_array($this->element_errors))
                 return 0;

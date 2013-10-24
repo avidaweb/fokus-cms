@@ -451,9 +451,6 @@ class Content
             
             $doc_rel_query = $this->getDocumentRelations($c);
             
-            if(count(self::$fks->getErrorDocuments()))
-                $c->error_counter ++;
-            
             while($doc_rel = self::$fksdb->fetch($doc_rel_query))
             {  
                 $c->doc_rel_count ++;
@@ -749,6 +746,9 @@ class Content
                     
                     $write .= $document_content;
                 }
+
+                if(count(self::$fks->getErrorDocuments()))
+                    $c->error_counter ++;
             }
         }
         elseif(self::$fks->isCustomPage())
