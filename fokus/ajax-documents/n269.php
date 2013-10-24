@@ -799,7 +799,7 @@ elseif($a == 7) // Feldzuordnungen Dokumentenklasse wählen im Vorraus
         {
             echo '
             <div class="box fehlerbox">
-               '.($type == 'dokument'?$trans->__('Es ist bereits eine Dokumentenklasse ausgewählt. Bitte beachten Sie, dass sämtliche Zuordnungen verloren gehen, wenn Sie diese ändern.'):$trans->__('Es ist bereits eine Produktklasse ausgewählt. Bitte beachten Sie, dass sämtliche Zuordnungen verloren gehen, wenn Sie diese ändern.') .'
+               '.$trans->__('Es ist bereits eine Dokumentenklasse ausgewählt. Bitte beachten Sie, dass sämtliche Zuordnungen verloren gehen, wenn Sie diese ändern.').'
             </div>';
         }
 
