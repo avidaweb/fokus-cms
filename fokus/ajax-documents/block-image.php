@@ -5,7 +5,7 @@ if(!defined('DEPENDENCE'))
 if(!$user->isAdmin())
     exit();
 
-function bild_optionen($user, $row, $s, $attr)
+function bild_optionen($trans, $user, $row, $s, $attr)
 {
     if(!$row->bild)
     { 
@@ -120,7 +120,7 @@ if($stack->papierkorb)
 $bildlink = $base->db_to_array($row->bildt);
 
 $internpic = ($stack->id?DOMAIN.'/img/'.$stack->id.'-200-0-'.$base->slug($stack->titel).'.'.$file->type:'');
-        
+
 echo '
 <form method="post" id="add_pic_form">
 <div class="box text_bild">
@@ -128,23 +128,23 @@ echo '
         <'.($row->type == 15?'h2 class="calibri"':'strong').'>
             Bild anzeigen
         </'.($row->type == 15?'h2':'strong').'>
-        
+
         <img id="preview_picture"'.(!$row->bild?' style="display:none;"':'').' src="'.($row->bild_extern?$row->bild_extern:$internpic).'" alt="Kein Bild geladen" />
-        
+
         <br />
         <span class="bildgr"></span>
     </div>
     <div class="tbR">
         '.($row->type == 15?'
         <div class="tbRa">
-            <input type="radio" name="bild" id="textbild_no" value="0"'.(!$row->bild?' checked="checked"':'').' /> 
+            <input type="radio" name="bild" id="textbild_no" value="0"'.(!$row->bild?' checked="checked"':'').' />
             <label for="textbild_no">'. $trans->__('kein Bild anzeigen') .'</label>
         </div>':'').'
-        
+
         <div class="tbR'.($row->type == 15?'b':'a').'">
-            <input type="radio" name="bild" id="textbild_yes" value="1"'.($row->bild == 1 || $row->type != 15?' checked="checked"':'').' /> 
+            <input type="radio" name="bild" id="textbild_yes" value="1"'.($row->bild == 1 || $row->type != 15?' checked="checked"':'').' />
             <label for="textbild_yes">'. $trans->__('Bild aus Bildverwaltung wählen') .'</label>
-            
+
             <div class="choosebild choosebild1"'.($row->bild != 1 && ($row->bild == 2 || $row->type == 15)?' style="display:none;"':'').'>
                 <p class="bauswahl">
                     <button id="getoldpic" class="'.($row->type == 36?'2':'1').'">'. $trans->__('Bild auswählen') .'</button>
@@ -155,28 +155,28 @@ echo '
                     <button class="edit_current_pic" data-file="'.$row->bildid.'" data-file_version="0"'.($row->bild != 1 || !$row->bildid?' style="display:none;"':'').'>
                         '.$trans->__('Bild bearbeiten').'
                     </button>':'').'
-                    
+
                     <input type="hidden" id="ins_bild_id" value="'.$row->bildid.'" name="bildid" />
                     <span id="ins_bild_titel">'.($row->bildid?$stack->titel:'').'</span>
                 </p>
-                '.bild_optionen($user, $row, '', $dclass_block['attr']).'                            
+                '.bild_optionen($trans, $user, $row, '', $dclass_block['attr']).'
             </div>
             '.($row->type != 15?'
             <div class="tbRb">
-                <input type="radio" name="bild" id="textbild_extern" value="2"'.($row->bild == 2?' checked="checked"':'').' /> 
+                <input type="radio" name="bild" id="textbild_extern" value="2"'.($row->bild == 2?' checked="checked"':'').' />
                 <label for="textbild_extern">'. $trans->__('Bild aus externe Quelle wählen') .'</label>
-                
+
                 <div class="choosebild choosebild2"'.($row->bild != 2?' style="display:none;"':'').'>
                     <p class="bauswahl">
-                        URL: <input type="text" name="bild_extern" id="bild_extern" value="'.$row->bild_extern.'" /> 
+                        URL: <input type="text" name="bild_extern" id="bild_extern" value="'.$row->bild_extern.'" />
                     </p>
-                    '.bild_optionen($user, $row, 2, $dclass_block['attr']).' 
+                    '.bild_optionen($trans, $user, $row, 2, $dclass_block['attr']).'
                 </div>
             </div>':'').'
             <div class="bild_verlinken"'.(!$row->bild && $row->type < 30?' style="display:none;"':'').'>
-                <input type="checkbox" id="piclinkit" name="bildt" value="1"'.($bildlink['href']?' checked="checked"':'').' /> 
+                <input type="checkbox" id="piclinkit" name="bildt" value="1"'.($bildlink['href']?' checked="checked"':'').' />
                 <label for="piclinkit">'. $trans->__('Bild verlinken ') .'</label>
-                
+
                 <p'.(!$bildlink['href']?' style="display:none;"':'').'>
                     <button id="linkoptionen">'. $trans->__('Linkoptionen') .'</button>
                     <input type="hidden" name="link_href" value="'.$bildlink['href'].'" />

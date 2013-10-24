@@ -75,10 +75,10 @@ class Block_66 extends BlockBasic
         
         while($block = self::$fksdb->fetch($blocks))
         {
-            if(!$c->show && in_array($block->vid, $c->block))
+            if(!$c->show && in_array((array)$block->vid, $c->block))
                 continue;
                 
-            if($c->show && !in_array($block->vid, $c->block))
+            if($c->show && !in_array((array)$block->vid, $c->block))
                 continue;
                 
             $output .= self::$content->parseHTML($block, $this->column_width, '', '');

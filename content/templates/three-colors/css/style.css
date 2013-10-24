@@ -71,11 +71,11 @@ article a:hover img {
     float: none;
 }
 
-strong {
+b, strong {
     font-weight: bold;
 }
 
-em {
+i, em {
     font-style: italic;
 }
 

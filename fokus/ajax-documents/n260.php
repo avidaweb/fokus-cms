@@ -161,12 +161,12 @@ $include_blocks = array(
 // Normaler WYSIWYG-Editor
 if($row->type > 7 && $row->type < 30 && $row->type != 20 && $row->type != 22)
 {
-    require('block-editor.php');        
+    require_once('block-editor.php');
 }
 
 if(array_key_exists($row->type, $include_blocks))
 {
-    require('block-'.$include_blocks[$row->type].'.php');
+    require_once('block-'.$include_blocks[$row->type].'.php');
 }
 
 echo '
