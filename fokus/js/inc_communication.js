@@ -758,7 +758,7 @@ function pn_content_reload() {
         $(pnR).find("a.titel, a.show_msg").off().on("click", function(){
             var par = $(this).parents("div.pnC");
             var pnA = $(par).siblings("div.pnA");
-            var vorschau = $(par).children("p.vorschau");
+            var vorschau = $(par).children("div.vorschau");
             var msg = $(this).attr("rel");
             
             if($(par).children("p.text")[0]){

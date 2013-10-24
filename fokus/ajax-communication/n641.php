@@ -71,11 +71,14 @@ while($pn = $fksdb->fetch($pnQ))
         </div>
         <div class="pnC">
             <a class="titel calibri'.($pn->gelesen || $pn->von == $user->getID()?'':' unread').'" rel="'.$pn->id.'">'.$pn->titel.'</a>
-            <p class="vorschau">
-                '.Strings::cut(strip_tags(htmlspecialchars_decode($pn->text)), 200).'
-            </p>
+            <div class="vorschau">
+                '.(strip_tags(htmlspecialchars_decode($pn->text)) < 200?
+                $pn->text:
+                Strings::cut(strip_tags(htmlspecialchars_decode($pn->text)), 200)
+                ).'
+            </div>
             <p class="more">
-                <a class="show_msg" rel="'.$pn->id.'">'.$trans->__('Nachricht anzeigen').'</a>
+                <a class="show_msg" rel="'.$pn->id.'"'.(strip_tags(htmlspecialchars_decode($pn->text)) < 200?' style="display:none;':'').'>'.$trans->__('Nachricht anzeigen').'</a>
                 '.(!$pn->gelesen && $pn->an == $user->getID()?'
                 <span class="s_gelesen"> | </span>
                 <a class="gelesen" rel="'.$pn->id.'">'.$trans->__('Als &quot;gelesen&quot; markieren').'</a>':'').'

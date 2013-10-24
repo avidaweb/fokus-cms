@@ -36,7 +36,7 @@ if($a == 'get')
 
         <p>
             <span class="dokweitergeben">'. $trans->__('Nachricht schreiben') .'</span>
-            <textarea></textarea>
+            <textarea>'.$trans->__('Ich habe das Dokument #%1 an Sie zur Bearbeitung weitergegeben.', false, array($id)).'</textarea>
         </p>
     </div>
 
