@@ -135,7 +135,7 @@ echo '
                         <td class="l1">'. $trans->__('Dokumenten-Klasse:') .'</td>
                         <td>
                             <select name="klasse" class="klasse">
-                                <option'.($rechte['dok']['dk'] && !$rechte['dok']['dklasse'][0]?' disabled':'').' value="" data-notitel="false">'. $trans->__('Standard-Dokument') .'/option>';
+                                <option'.($rechte['dok']['dk'] && !$rechte['dok']['dklasse'][0]?' disabled':'').' value="" data-notitel="false">'. $trans->__('Standard-Dokument') .'</option>';
 
                                 foreach($dkklassen_inc as $k => $v)
                                 {
