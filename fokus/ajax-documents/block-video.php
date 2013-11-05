@@ -5,7 +5,7 @@ if(!defined('DEPENDENCE'))
 if(!$user->isAdmin())
     exit();
 
-function video_optionen($row, $s, $uindiv)
+function video_optionen($trans, $row, $s, $uindiv)
 {
     if(!$row->bild)
     { 
@@ -79,7 +79,7 @@ echo '
                         <a href="http://www.dailymotion.com" target="_blank" rel="nofollow">'. $trans->__('Dailymotion') .'</a> &amp;
                         <a href="http://www.myvideo.de" target="_blank" rel="nofollow">'. $trans->__('MyVideo') .'</a>
                     </p>
-                    '.video_optionen($row, 2, $user->getIndiv()).' 
+                    '.video_optionen($trans, $row, 2, $user->getIndiv()).'
                 </div>
             </div>
         </div>
