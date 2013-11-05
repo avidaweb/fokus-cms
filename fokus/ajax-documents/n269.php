@@ -449,7 +449,7 @@ elseif($a == 5) // Feldzuordnungen
     }
 
     echo '
-    <h1>'. $trans->__('Feldzuordnungen % Einstellungen.') .'</h1>
+    <h1>'. $trans->__('Feldzuordnungen &amp; Einstellungen.') .'</h1>
 
     <form id="feld_zuordnungen">
     <div class="box intro">
@@ -462,7 +462,8 @@ elseif($a == 5) // Feldzuordnungen
         else
             echo $trans->__('Sie möchten mit diesem Formular automatisch Produkte erzeugen');
 
-    echo '
+        echo '
+        </strong>
     </div>
     <div class="box">
         <table class="zuordnung">
