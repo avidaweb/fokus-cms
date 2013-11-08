@@ -11,11 +11,9 @@ echo '
     <h2 class="calibri">Was ist neu?</h2>
     
     <ul>
-        <li><strong>Neu in 2013.20</strong></li>
+        <li><strong>Neu in 2013.30</strong></li>
         <li>Quellcode-Qualität gesteigert</li>
         <li>Mehrere Bugs behoben</li>
-        <li>Neue API-Funktionen integriert</li>
-        <li>... <a href="http://www.fokus-cms.de/46/changelog-what-s-new/" target="_blank">kompletter Changelog</a></li>
     </ul>
 </div>
 

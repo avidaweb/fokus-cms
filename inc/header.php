@@ -19,7 +19,7 @@ define('BACKEND_DIR', ROOT.'fokus/', true);
 define('TEMPLATES_DIR', ROOT.'content/templates/', true);
 define('EXTENSIONS_DIR', ROOT.'content/extensions/', true);
 define('DEPENDENCE', true, true);
-define('FKS_VERSION', 2013.20, true);
+define('FKS_VERSION', 2013.30, true);
 
 
 if(!defined('IS_INSTALLATION'))

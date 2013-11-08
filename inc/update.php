@@ -557,6 +557,13 @@ if($fv > 0 && $fv_db > 0 && $fv_db < $fv)
         $query .= "
         UPDATE ".SQLPRE."options SET version = '".$uv."', changelog = '".$uv."';";
     }
+
+    $uv = 2013.30;
+    if($fv_db < $uv && $fv >= $uv)
+    {
+        $query .= "
+        UPDATE ".SQLPRE."options SET version = '".$uv."', changelog = '".$uv."';";
+    }
     
     
     if($query)

@@ -65,7 +65,7 @@ while($block = $fksdb->fetch($blocks))
             '.$base->block_preview($block->html, $block->type, $block->teaser, array('id' => $block->bildid, 'w' => $block->bildw, 'wt' => $block->bildwt)).' 
         </div>
         <div class="p r">
-            <input type="checkbox" name="block[]" id="c_block_'.$block->vid.'" value="'.$block->vid.'"'.(in_array($block->vid, $c->block)?' checked':'').' />
+            <input type="checkbox" name="block[]" id="c_block_'.$block->vid.'" value="'.$block->vid.'"'.(in_array($block->vid, (array)$c->block)?' checked':'').' />
             <label for="c_block_'.$block->vid.'">
                 <span class="is_hide"'.($c->show?' style="display:none;"':'').'>'.$trans->__('nicht anzeigen').'</span>
                 <span class="is_show"'.(!$c->show?' style="display:none;"':'').'>'.$trans->__('anzeigen').'</span>
